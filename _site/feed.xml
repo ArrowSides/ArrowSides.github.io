@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ArrowSides</title>
-    <description>For what you want , Never give up.
+    <description>For what you want , never give up.
 </description>
     <link>https://arrowsides.github.io/</link>
     <atom:link href="https://arrowsides.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 01 Jul 2016 21:48:04 +0800</pubDate>
-    <lastBuildDate>Fri, 01 Jul 2016 21:48:04 +0800</lastBuildDate>
+    <pubDate>Fri, 01 Jul 2016 22:28:29 +0800</pubDate>
+    <lastBuildDate>Fri, 01 Jul 2016 22:28:29 +0800</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
@@ -52,6 +52,137 @@
         <category>jekyll</category>
         
         <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Theory Of Information</title>
+        <description>&lt;h1 id=&quot;section&quot;&gt;信息论的复习大纲&lt;/h1&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;概念：&lt;/h2&gt;
+
+&lt;p&gt;先验概率：是一个事件根据以往的经验和分析得到的概率，不具备当前情况的任何信息。&lt;/p&gt;
+
+&lt;p&gt;后验概率：在先验概率的基础上，由结果推出的概率，类似于条件概率。&lt;/p&gt;
+
+&lt;p&gt;自信息量：一个事件一定发生所需要的信息量&lt;/p&gt;
+
+&lt;p&gt;信息量：确定多种可能中其中一种可能所需要的试探次数的对数&lt;/p&gt;
+
+&lt;p&gt;熵：自信息量的期望，用来表示一个事件集中，平均的自信息量的大小&lt;/p&gt;
+
+&lt;p&gt;互信息：事件x1出现给事件x2发生提供的信息量&lt;/p&gt;
+
+&lt;p&gt;平均互信息：互信息的期望，两个集合之间，一个集合中事件出现后所给出的关于另一个集合中事件出现的信息量的平均值。&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;条件降低熵：H(X&lt;/td&gt;
+      &lt;td&gt;Y) &amp;lt;= H(X)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;链式法则：H(X,Y) = H(X) + H(Y&lt;/td&gt;
+      &lt;td&gt;X)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;信息处理不等式：&lt;/p&gt;
+
+&lt;p&gt;Y = f(Z)&lt;/p&gt;
+
+&lt;p&gt;X -&amp;gt; Z -&amp;gt; Y&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;H(X&lt;/td&gt;
+      &lt;td&gt;Z) &amp;lt;= H(X&lt;/td&gt;
+      &lt;td&gt;f(Z)) = H(X&lt;/td&gt;
+      &lt;td&gt;Y)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;I(X;Z) &amp;gt;= I(X;f(Z)) = I(X;Y)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;M = D&lt;sup&gt;N&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;R = (N/L)logD&lt;/p&gt;
+
+&lt;p&gt;可达速率：对于给定的信源和编码速率R以及任意的ε&amp;gt;0，若存在一种编码方法，使得L&amp;gt;L&lt;sub&gt;0&lt;/sub&gt;时，
+P&lt;sub&gt;e&lt;/sub&gt; &amp;lt; ε，就称R是可达的。&lt;/p&gt;
+
+&lt;p&gt;信源编码定理：若R&amp;gt;H(U)，则R是可达的;若R&amp;lt;H(U)，则R是不可达的&lt;/p&gt;
+
+&lt;p&gt;Kraft不等式：长度为n1,n2,…,nk的D元异字头码存在的充分必要条件是：∑&lt;sub&gt;k&lt;/sub&gt; D&lt;sup&gt;-nk&lt;/sup&gt; &amp;lt;= 1&lt;/p&gt;
+
+&lt;p&gt;唯一可译码：对有限长的每个源输出序列，相应的码字序列彼此都可无异议地区分开来。&lt;/p&gt;
+
+&lt;p&gt;唯一可译码必须满足Kraft不等式。&lt;/p&gt;
+
+&lt;p&gt;不等长编码定理：平均长度n &amp;lt; (H(U)/logD) + 1 ; n &amp;gt;= (H(U)/logD)&lt;/p&gt;
+
+&lt;p&gt;异字头码：码中任何一个码字都不是另一个码字的字头&lt;/p&gt;
+
+&lt;p&gt;等长编码：对信源输出的信息采用相同长度的码字表示&lt;/p&gt;
+
+&lt;p&gt;不等长编码：对信源输出的信息采用不同长度的码字表示&lt;/p&gt;
+
+&lt;p&gt;编码方法：（练习）&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Huffman编码:从叶开始，合并，如果是D元码，要求数目除以(D-1)余1，不满足的话补0，尽量优先使用未使用过的结点，可以使方差最小&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;LZ编码:先分段，每个字有个编码，每一段有个编码（段的号 + 符号编码）&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;算术编码:需要先计算码长，计算输入信源符号序列所对应的区间，然后再区间中任取一点，以其二进制表示适当截断作为序列的编码结果。&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;信道容量：改变输入分布，所能达到的平均互信息的最大值&lt;/p&gt;
+
+&lt;p&gt;信道容量的计算：&lt;/p&gt;
+
+&lt;p&gt;已知转移概率&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;对称信道：log(输出数) + 转移矩阵第一行的熵的和  （输入等概）&lt;/li&gt;
+  &lt;li&gt;准对称信道： 转移矩阵的第一行的每一列的第一个值乘以log(这第一个值除以这一列值的均值)（输入等概）&lt;/li&gt;
+  &lt;li&gt;离散无记忆模K加性噪声信道：C = logK - H(Z) ; z = x ⊕ y mod K&lt;/li&gt;
+  &lt;li&gt;积信道(独立并行信道):C = C1 + C2&lt;/li&gt;
+  &lt;li&gt;和信道(并信道):2&lt;sup&gt;C&lt;/sup&gt; = 2&lt;sup&gt;C&lt;sub&gt;1&lt;/sub&gt;&lt;/sup&gt; + 2&lt;sup&gt;C&lt;sub&gt;2&lt;/sub&gt;&lt;/sup&gt;&lt;/li&gt;
+  &lt;li&gt;高斯噪声信道:0.5*log(1+信噪比) 信噪比： S/σ&lt;sup&gt;2&lt;/sup&gt;&lt;/li&gt;
+  &lt;li&gt;平行可加高斯噪声信道(注水算法):S = B - σ&lt;sup&gt;2&lt;/sup&gt;，只计算σ&lt;sup&gt;2&lt;/sup&gt;在B以下相差部分与噪声比值的部分。 C = ∑ 0.5*log(1+ S/σ&lt;sup&gt;2&lt;/sup&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;编码速率：R = L / N&lt;/p&gt;
+
+&lt;p&gt;信道编码定理：给定信道容量为C的离散无记忆信道，R &amp;lt; C是可达的。&lt;/p&gt;
+
+&lt;p&gt;最大后验译码准则：取后验概率最大的来将信息译码。&lt;/p&gt;
+
+&lt;p&gt;最大似然译码准则：（先验概率等概的情况下，与最大后验一致），取似然函数（先验概率）最大的情况来进行译码。&lt;/p&gt;
+</description>
+        <pubDate>Fri, 01 Jul 2016 00:00:00 +0800</pubDate>
+        <link>https://arrowsides.github.io/2016/07/01/Theory-of-Information.html</link>
+        <guid isPermaLink="true">https://arrowsides.github.io/2016/07/01/Theory-of-Information.html</guid>
+        
         
       </item>
     
