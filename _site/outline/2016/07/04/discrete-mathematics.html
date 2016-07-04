@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Discrete Mathematics</title>
-  <meta name="description" content="##第一部分:数理逻辑###第一章  命题的基本概念：简单命题，复合命题      命题的联结词：否定，合取，析取（和”或“操作不同，或操作分为相容或和排斥或），蕴含和等价    （排斥或：当它连接的两个命题，只有当其中一个为真，另一个为假时，结果才为真）    （相容或：只要有一个为真，结果就为真）    蕴含...">
+  <meta name="description" content="第一部分:数理逻辑第一章  命题的基本概念：简单命题，复合命题      命题的联结词：否定，合取，析取（和”或“操作不同，或操作分为相容或和排斥或），蕴含和等价    （排斥或：当它连接的两个命题，只有当其中一个为真，另一个为假时，结果才为真）    （相容或：只要有一个为真，结果就为真）    蕴含式的表述：...">
 
   <link rel="stylesheet" href="/css/main.css">
   <link rel="canonical" href="https://arrowsides.github.io/outline/2016/07/04/discrete-mathematics.html">
@@ -62,9 +62,9 @@
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    <p>##第一部分:数理逻辑</p>
+    <h2 id="section">第一部分:数理逻辑</h2>
 
-<p>###第一章</p>
+<h1 id="section-1">第一章</h1>
 
 <ol>
   <li>命题的基本概念：简单命题，复合命题</li>
@@ -145,7 +145,7 @@
 
 <p>习题：6 15.3 15.4 17 19 <strong>26</strong></p>
 
-<p>###第二章</p>
+<h1 id="section-2">第二章</h1>
 
 <p>1.等值式：</p>
 
@@ -175,7 +175,7 @@
 
 <p>作业：5 6 12 13 20 30</p>
 
-<p>###第三章</p>
+<h1 id="section-3">第三章</h1>
 
 <p>1.推理：</p>
 
@@ -200,7 +200,7 @@
 
 <p>作业：15 16 18</p>
 
-<p>###第四章</p>
+<h1 id="section-4">第四章</h1>
 
 <p>引入量词这一概念，达到表达个体与总体之间的内在联系和数量关系，一阶逻辑所研究的内容就是谓词。</p>
 
@@ -244,7 +244,7 @@ I下的赋值σ：对每一个个体变项的符号x指定D1中的一个值σ(x)
 
 <p>作业：2 5 8 10 12</p>
 
-<p>###第五章（不考）</p>
+<h1 id="section-5">第五章（不考）</h1>
 
 <p>1.一阶逻辑的等值式：
 等值式：若A↔B 是永真式，则称A与B等值。</p>
@@ -288,11 +288,11 @@ Q<sub>1</sub>x<sub>1</sub>Q<sub>2</sub>x<sub>2</sub>…..Q<sub>k</sub>x<sub>k</s
 
 <p>作业：8， 12.（4） （5）， 15， 20， 23</p>
 
-<p>##第二部分：集合论</p>
+<h2 id="section-6">第二部分：集合论</h2>
 
-<p>###第六章</p>
+<h1 id="section-7">第六章</h1>
 
-<p>######1.集合的基本概念：</p>
+<p>1.集合的基本概念：</p>
 
 <p>集合：把一些事物汇集到一起组成一个整体，这些事物是这个集合的<strong>元素</strong>或者<strong>成员</strong></p>
 
@@ -328,7 +328,7 @@ Q<sub>1</sub>x<sub>1</sub>Q<sub>2</sub>x<sub>2</sub>…..Q<sub>k</sub>x<sub>k</s
   <li>全集：一个具体问题中，所有涉及的集合都是同一个集合的子集，这个集合为全集，记作E。</li>
 </ul>
 
-<p>######2.集合的运算：
+<p>2.集合的运算：
 * 并集 A∪B={x|x∈A∨x∈B}
 * 交集 A∩B={x|x∈A∧x∈A} 若两个集合的交集是空集，则称这两个集合不交
 * 相对补集 A-B={x|x∈A∧x∉B} 
@@ -337,18 +337,16 @@ Q<sub>1</sub>x<sub>1</sub>Q<sub>2</sub>x<sub>2</sub>…..Q<sub>k</sub>x<sub>k</s
 * 广义并 ∪A={x|∃z(z∈A∧x∈z)} A的元素的元素构成的集合
 * 广义交 ∩A={x|∀z(z∈A→x∈z)} A的所有公共元素的公共元素构成的集合 空集不能广义交</p>
 
-<p>#######3.包含排斥原理：
+<p>3.包含排斥原理：
 设S为有穷集合，P<sub>1</sub>,P<sub>2</sub>,…,P<sub>n</sub>是n个性质，S中的任何元素x或者具有性质P<sub>i</sub>或者不具有性质P<sub>i</sub>，两种情况必选其一。
 令A<sub>i</sub>表示S中具有性质P<sub>i</sub>的元素构成的子集，则S不具有性质P<sub>1</sub>，P<sub>2</sub>，…，P<sub>n</sub>的元素个数为：
 |S|-∑|A<sub>i</sub>|+∑|A<sub>i</sub>∩A<sub>j</sub>|-∑|A<sub>i</sub>∩A<sub>j</sub>∩A<sub>k</sub>|+…+(-1)<sup>n</sup>∑|A<sub>i</sub>∩A<sub>j</sub>∩A<sub>k</sub>∩…∩A<sub>n</sub>|</p>
 
-<p>#######4.集合恒等式（P100）</p>
+<p>4.集合恒等式（P100）</p>
 
 <p>作业：9， 12， 18（3） （4）， 21， 23， 35</p>
 
-<p>###第七章</p>
-
-<h5 id="section">#</h5>
+<h1 id="section-8">第七章</h1>
 
 <p>由两个元素x,y（x可以等于y）按照一定顺序排列成的二元组称作一个<strong>有序对</strong>或者<strong>有序偶</strong>&lt;x,y&gt;</p>
 
@@ -378,7 +376,7 @@ Q<sub>1</sub>x<sub>1</sub>Q<sub>2</sub>x<sub>2</sub>…..Q<sub>k</sub>x<sub>k</s
   <li>A⊆C∧B⊆D ⇒ A×B ⊆ C×D  (命题演算的方式证明)</li>
 </ul>
 
-<p>#######二元关系：</p>
+<h1 id="section-9">二元关系：</h1>
 
 <p>一个集合满足如下条件之一：</p>
 
@@ -447,8 +445,16 @@ Q<sub>1</sub>x<sub>1</sub>Q<sub>2</sub>x<sub>2</sub>…..Q<sub>k</sub>x<sub>k</s
 
 <p>关系的三种表示方法：1.集合表达式 2.关系矩阵 3.关系图</p>
 
-<p>#######关系的运算
-定义域：所有有序对的第一元素构成的集合：domR = {x|∃y(&lt;x,y&gt;∈R)}</p>
+<h1 id="section-10">关系的运算</h1>
+
+<table>
+  <tbody>
+    <tr>
+      <td>定义域：所有有序对的第一元素构成的集合：domR = {x</td>
+      <td>∃y(&lt;x,y&gt;∈R)}</td>
+    </tr>
+  </tbody>
+</table>
 
 <table>
   <tbody>
@@ -559,8 +565,9 @@ Q<sub>1</sub>x<sub>1</sub>Q<sub>2</sub>x<sub>2</sub>…..Q<sub>k</sub>x<sub>k</s
   <li>令S={R<sup>0</sup>,R<sup>1</sup>,…,R<sup>t-1</sup>}，则对于任意的q∈N有R<sup>q</sup>∈S。</li>
 </ul>
 
-<p>######关系的性质
-设R为A上的关系</p>
+<h1 id="section-11">关系的性质</h1>
+
+<p>设R为A上的关系</p>
 
 <ul>
   <li>若∀x(x∈A→&lt;x,x&gt;∈R)，则称R在A上是自反的。</li>
@@ -588,8 +595,9 @@ Q<sub>1</sub>x<sub>1</sub>Q<sub>2</sub>x<sub>2</sub>…..Q<sub>k</sub>x<sub>k</s
   <li>R在A上传递当且仅当R▫R⊆R.</li>
 </ul>
 
-<p>######关系的闭包
-设R是非空集合A上的关系，R的自反（传递或对称）闭包是A上的关系R’,使得R’满足以下条件.</p>
+<h1 id="section-12">关系的闭包</h1>
+
+<p>设R是非空集合A上的关系，R的自反（传递或对称）闭包是A上的关系R’,使得R’满足以下条件.</p>
 
 <ul>
   <li>R’是自反的（对称或传递的）</li>
@@ -631,7 +639,7 @@ Q<sub>1</sub>x<sub>1</sub>Q<sub>2</sub>x<sub>2</sub>…..Q<sub>k</sub>x<sub>k</s
   <li>若R是传递的，则r(R)是传递的</li>
 </ul>
 
-<p>######等价关系</p>
+<h1 id="section-13">等价关系</h1>
 
 <p>设R为非空集合A上的关系。如果R是自反的、对称的和传递的，则称R为A上的等价关系。记为x~y</p>
 
@@ -675,7 +683,7 @@ A/R={[x]<sub>R</sub>|x∈A}</p>
 
 <p>则Π是A的一个划分，称Π中的元素为A的划分块。</p>
 
-<p>######偏序关系</p>
+<h1 id="section-14">偏序关系</h1>
 
 <p>设R为非空集合A上的关系。如果R是自反的、反对称的和传递的。则称R为A上的偏序关系，记作≤。</p>
 
@@ -730,8 +738,8 @@ A/R={[x]<sub>R</sub>|x∈A}</p>
 
 <p>作业：6，12，25，31，33，40，45，48</p>
 
-<p>###函数
-设F为二元关系，若∀x∈domF都存在唯一的y∈ranF使xFy成立，则称F为函数。对于函数F，如果有xFy，则记住y=F(x)，并称y为F在x的值。</p>
+<h1 id="section-15">函数</h1>
+<p>设F为二元关系，若∀x∈domF都存在唯一的y∈ranF使xFy成立，则称F为函数。对于函数F，如果有xFy，则记住y=F(x)，并称y为F在x的值。</p>
 
 <p>设F,G为函数，则 F=G ⇔ F⊆G ∧ G⊆F，如果两个函数相等，必然有：</p>
 
@@ -801,8 +809,9 @@ X<sub>A’</sub>(a)= 1 , a∈A’ <strong>;</strong> 0 , a∈A-A’</p>
 
 <p>不同的等价关系将确定不同的自然映射，其中恒等关系所确定的自然映射是双射，而其他自然映射一般来说只是满射。</p>
 
-<p>######函数的复合和反函数
-设F，G是函数，则F▫G也是函数，且满足</p>
+<h1 id="section-16">函数的复合和反函数</h1>
+
+<p>设F，G是函数，则F▫G也是函数，且满足</p>
 
 <table>
   <tbody>
@@ -832,12 +841,13 @@ X<sub>A’</sub>(a)= 1 , a∈A’ <strong>;</strong> 0 , a∈A-A’</p>
 
 <p>作业：2， 3(2)(4)(6)(8)，9， 15， 16， 20， 26</p>
 
-<p>##第三部分</p>
+<h2 id="section-17">第三部分</h2>
 
-<p>###第九章</p>
+<h1 id="section-18">第九章</h1>
 
-<p>######二元运算及其性质
-设S为集合，函数f:S×S-&gt;S称为S上的二元运算。</p>
+<h1 id="section-19">二元运算及其性质</h1>
+
+<p>设S为集合，函数f:S×S-&gt;S称为S上的二元运算。</p>
 
 <p>一个运算时集合S的二元运算需要满足的性质：</p>
 
@@ -906,8 +916,8 @@ y<sub>l</sub>=y<sub>r</sub>=y
 
 <p>那么称▫运算满足消去律，其中第一个是左消去律，<strong>被消去的x不能是运算的零元</strong></p>
 
-<p>######代数系统
-非空集合S和S上的k个一元或二元运算f<sub>1</sub>，f<sub>2</sub>，….，f<sub>k</sub>组成的系统是<strong>代数系统</strong>
+<h1 id="section-20">代数系统</h1>
+<p>非空集合S和S上的k个一元或二元运算f<sub>1</sub>，f<sub>2</sub>，….，f<sub>k</sub>组成的系统是<strong>代数系统</strong>
 记作&lt;S，f<sub>1</sub>，f<sub>2</sub>，….，f<sub>k</sub>&gt;.</p>
 
 <p>类似单位元一类的元素称为系统的特异元素或者代数常数。</p>
@@ -939,7 +949,7 @@ y<sub>l</sub>=y<sub>r</sub>=y
 
 <p>作业：2， 8， 11， 15， 16</p>
 
-<p>###第十章</p>
+<h1 id="section-21">第十章</h1>
 
 <p>半群：二元运算，运算时可结合的</p>
 
@@ -1022,9 +1032,9 @@ y<sub>l</sub>=y<sub>r</sub>=y
 
 <p>作业：3， 4， 9， 15</p>
 
-<p>##第五部分：图论</p>
+<h2 id="section-22">第五部分：图论</h2>
 
-<p>######第14章</p>
+<h1 id="section-23">第14章</h1>
 
   </div>
 
