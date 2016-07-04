@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Discrete Mathematics</title>
+  <meta name="description" content="##第一部分:数理逻辑###第一章  命题的基本概念：简单命题，复合命题      命题的联结词：否定，合取，析取（和”或“操作不同，或操作分为相容或和排斥或），蕴含和等价    （排斥或：当它连接的两个命题，只有当其中一个为真，另一个为假时，结果才为真）    （相容或：只要有一个为真，结果就为真）    蕴含...">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="https://arrowsides.github.io/outline/2016/07/04/discrete-mathematics.html">
+  <link rel="alternate" type="application/rss+xml" title="ArrowSides" href="https://arrowsides.github.io/feed.xml">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">ArrowSides</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+          <a class="page-link" href="/about/">About</a>
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">Discrete Mathematics</h1>
+    <p class="post-meta"><time datetime="2016-07-04T12:39:06+08:00" itemprop="datePublished">Jul 4, 2016</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>##第一部分:数理逻辑</p>
+
+<p>###第一章</p>
+
+<ol>
+  <li>命题的基本概念：简单命题，复合命题</li>
+  <li>
+    <p>命题的联结词：否定，合取，析取（和”或“操作不同，或操作分为<strong>相容或</strong>和<strong>排斥或</strong>），蕴含和等价</p>
+
+    <p>（排斥或：当它连接的两个命题，只有当其中一个为真，另一个为假时，结果才为真）</p>
+
+    <p>（相容或：只要有一个为真，结果就为真）</p>
+
+    <p>蕴含式的表述：如果…那么… 只有…就… 因为…所以… 如果…才… 除非q才p</p>
+
+    <p>真值表：</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>p</th>
+          <th>q</th>
+          <th>¬p</th>
+          <th>p∧q</th>
+          <th>p∨q</th>
+          <th>p→q</th>
+          <th>p↔q</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>0</td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+          <td>1</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>命题公式： 命题常项，命题变项，合式公式（命题公式），哑元
+ 通过元语言符号来修饰对象语言的符号</li>
+  <li>命题变项的赋值（解释）</li>
+  <li>命题公式的分类：
+    <ul>
+      <li>永真式（重言式）</li>
+      <li>矛盾式（矛盾式）</li>
+      <li>可满足式</li>
+    </ul>
+  </li>
+</ol>
+
+<p>习题：6 15.3 15.4 17 19 <strong>26</strong></p>
+
+<p>###第二章</p>
+
+<p>1.等值式：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>1.A，B两个命题公式，A，B构成的等价式是重言式，则A，B是等值的。
+	等值式模式：由重言式推出的等值式。（16个等值式）(p21)
+2.代入实例和等值演算
+3.置换规则：Φ(A)是含有公式A的命题公式，Φ(B)是用公式B置换Φ(A)中A所有出现的命题后得到的命题公式。若B等值于A，那么Φ(A)等值于Φ(B) 2.析取范式和合取范式：
+
+1.文字：是命题变项和其否定统称文字。
+2.简单析取式和简单合取式：简单体现在有限个文字构成
+3.析取范式（合取范式）：由有限个简单析取式的合取构成的命题公式（由有限个简单合取式的析取构成的命题公式）
+4.极大项和极小项
+5.主析取范式（主合取范式）：所有简单合取式（析取式）都是极小项（极大项）的析取范式（合取范式） 3.联结词的完备集：
+
+1.什么是联结词的完备集
+2.联结词的完备集有哪些：
+	S = {¬，∧，∨}
+	S = {¬，∧}
+	S = {¬，∨}
+	S = {¬，→}
+3.与非式和或非式（p↑q，p↓q）
+	p↑q  =  ¬(p∧q)
+	p↓q  =  ¬(p∨q)
+	{↑},{↓}也是联结词的完备集
+</code></pre>
+</div>
+
+<p>作业：5 6 12 13 20 30</p>
+
+<p>###第三章</p>
+
+<p>1.推理：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>1.推理是指从已知的条件出发推出结论的过程。
+	前提是已知的命题公式的集合
+	结论是从前提出发应用推理规则推出的命题公式。
+2.推理有效：当条件均为假时或者（当条件均为真时，能够推出结论也为真），那么从条件推出结论的推理是有效的。
+3.命题公式An推出B的推理正确当且仅当： A1∧A2∧A3∧...∧Ak → B 为重言式。
+	判断重言式的方法：1.真值表 2.等值演算法 3.主析取范式法
+推理定律：9条  (p50) **如果前提不正确，不论结论正确与否，都说推理正确** 2.自然推理系统：
+
+形式系统分为两类：一类是自然推理系统（由任意给定的条件出发，推出结论）和公理推理系统（由公理出发推出定理）
+推理规则：（P51）
+公式序列可以称为条件推出结论的证明（公式序列可以理解为推理过程）
+</code></pre>
+</div>
+
+<p>构造证明的方法：
+1.直接证明法：
+2.附加前提证明法：（若结论是蕴含式，可以将结论的前件作为推理的前提）
+3.归谬法（反证法）：（将结论的否定式作为前提引入并推出矛盾式的证明方法）</p>
+
+<p>作业：15 16 18</p>
+
+<p>###第四章</p>
+
+<p>引入量词这一概念，达到表达个体与总体之间的内在联系和数量关系，一阶逻辑所研究的内容就是谓词。</p>
+
+<p>1.一阶逻辑</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>个体词：所研究对象中可以独立存在的具体的或抽象的客体
+表示具体或特定的客体的个体词是：个体常项
+表示抽象或泛指的的个体词：个体变项
+个体域（论域）：表示个体变项的取值范围
+
+谓词：刻画个体词性质及个体词之间相互关系的词
+谓词常项和谓词变项
+n元谓词（含有n个个体变项的谓词）
+
+表示个体常项或变项之间数量关系的词称为量词：1.全称量词 2.存在量词
+为了区别不同的事物，可以使用特性谓词来区分。 2.一阶逻辑公式和解释
+
+一阶语言：用于一阶逻辑的形式语言。
+非逻辑符号和逻辑符号：逻辑符号是（个体变项的符号，量词的符号，联结词的符号和括号与逗号）
+一些概念：项，原子公式，合式公式（谓词公式，公式）【原子公式本身也是一种合式公式】{有限次的使用联结词得到的公式}。
+
+**概念**
+在公式 ∀xA和∃xA中称x为知道变元A为量词的辖域，在∀x和∃x的辖域中，x的所有出现都称为约束出现，A中不是约束出现的其他变项是自由出现。
+
+若A中不含自由出现的个体变项，则称A为封闭的公式，简称闭式。
+
+对于公式中个体域及个体常项符号、函数符号、谓词符号的指定称为解释，指定自由出现的个体变项的值称为赋值。
+
+I下的赋值σ：对每一个个体变项的符号x指定D1中的一个值σ(x).
+设公式A，规定：在解释I和赋值σ下：
+1.取个体域D1，
+2.若A中含个体常项符号a将它替换成a',
+3.若Ａ中含有函数符号ｆ就将它替换成f'，
+4.若A中含有谓词符号F就将他替换Va为F',
+5.若A中含有自由出现的个体变项符号x就将它替换成为σ(x)。
+这样所得到的公式记作A',称A'为A在I下的解释，或A在I下被解释为A'。
+
+代换实例：用谓词公式将所对应的命题变项中的值处处替换得到的公式是原公式的代换实例。
+</code></pre>
+</div>
+
+<p>作业：2 5 8 10 12</p>
+
+<p>###第五章（不考）</p>
+
+<p>1.一阶逻辑的等值式：
+等值式：若A↔B 是永真式，则称A与B等值。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>存在一些基本的等值式：
+</code></pre>
+</div>
+
+<p>2.置换规则和换名规则。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>置换规则：设Φ(A)是含公式A的公式，Φ(B)是用公式B取代Φ(A)中的所有的A之后所得到的公式，那么，若A与B等价，则Φ(A)与Φ(B)等价。
+换名规则：将A中某个量词辖域中的一个约束变项的所有出现和响应的指导变元全部改成该量词辖域中未曾出现过的某个个体变项的符号。
+</code></pre>
+</div>
+
+<p>3.前束范式：</p>
+
+<p>具有如下形式：
+Q<sub>1</sub>x<sub>1</sub>Q<sub>2</sub>x<sub>2</sub>…..Q<sub>k</sub>x<sub>k</sub> 
+的一阶逻辑公式。  Q<sub>i</sub>为∀或者∃，B为不含量词的公式。</p>
+
+<p>前束范式存在定理：一阶逻辑中的任何公式都存在等值的前束范式。</p>
+
+<p>4.一阶逻辑的推理理论</p>
+
+<p>在一阶逻辑中，从前提A<sub>1</sub>,A<sub>2</sub>,….,A<sub>k</sub>出发推出结论B的推理的形式结构，采取如下的蕴含式形式</p>
+
+<p>A<sub>1</sub>∧A<sub>2</sub>∧A<sub>3</sub>∧…..∧A<sub>k</sub>→B</p>
+
+<p>若上式为永真式，则推理正确。</p>
+
+<p>5.自然推理系统：</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>1.字母表。
+2.合式公式。
+3.推理规则：（1）前提引入规则 （2）结论引入规则 （3）置换规则 （4）假言推理规则 （5）附加规则 
+（6）化简规则 （7）拒取式 （8）假言三段论规则 （9）析取三段论规则 （10）构造性二难推理规则 
+（11）合取引入规则 （12）∀-规则 （13）∀+规则 （14）∃-规则 （15） ∃+规则
+</code></pre>
+</div>
+
+<p>作业：8， 12.（4） （5）， 15， 20， 23</p>
+
+<p>##第二部分：集合论</p>
+
+<p>###第六章</p>
+
+<p>######1.集合的基本概念：</p>
+
+<p>集合：把一些事物汇集到一起组成一个整体，这些事物是这个集合的<strong>元素</strong>或者<strong>成员</strong></p>
+
+<p>元素与集合的关系：属于和不属于∈和∉</p>
+
+<p>集合和集合的关系：</p>
+
+<ul>
+  <li>包含  B⊆A⇔∀x(x∈B→x∈A)</li>
+  <li>相等  A=B   A⊆B且B⊆A</li>
+  <li>真子集  B⊂A且B≠A，则B是A的真子集</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>空集∅  ∅={x</td>
+          <td>x≠x}  空集是一切子集的子集 空集是唯一的</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>含有n个元素的集合简称为n元集</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>幂集：A为集合，A的所有子集构成的集合称为A的幂集: P(A)={x</td>
+          <td>x⊆A}</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>全集：一个具体问题中，所有涉及的集合都是同一个集合的子集，这个集合为全集，记作E。</li>
+</ul>
+
+<p>######2.集合的运算：
+* 并集 A∪B={x|x∈A∨x∈B}
+* 交集 A∩B={x|x∈A∧x∈A} 若两个集合的交集是空集，则称这两个集合不交
+* 相对补集 A-B={x|x∈A∧x∉B} 
+* 对称差集 A⊕B=(A-B)∪(B-A)
+* 绝对补集 ~A=E-A={x|x∈E∧x∉A}
+* 广义并 ∪A={x|∃z(z∈A∧x∈z)} A的元素的元素构成的集合
+* 广义交 ∩A={x|∀z(z∈A→x∈z)} A的所有公共元素的公共元素构成的集合 空集不能广义交</p>
+
+<p>#######3.包含排斥原理：
+设S为有穷集合，P<sub>1</sub>,P<sub>2</sub>,…,P<sub>n</sub>是n个性质，S中的任何元素x或者具有性质P<sub>i</sub>或者不具有性质P<sub>i</sub>，两种情况必选其一。
+令A<sub>i</sub>表示S中具有性质P<sub>i</sub>的元素构成的子集，则S不具有性质P<sub>1</sub>，P<sub>2</sub>，…，P<sub>n</sub>的元素个数为：
+|S|-∑|A<sub>i</sub>|+∑|A<sub>i</sub>∩A<sub>j</sub>|-∑|A<sub>i</sub>∩A<sub>j</sub>∩A<sub>k</sub>|+…+(-1)<sup>n</sup>∑|A<sub>i</sub>∩A<sub>j</sub>∩A<sub>k</sub>∩…∩A<sub>n</sub>|</p>
+
+<p>#######4.集合恒等式（P100）</p>
+
+<p>作业：9， 12， 18（3） （4）， 21， 23， 35</p>
+
+<p>###第七章</p>
+
+<h5 id="section">#</h5>
+
+<p>由两个元素x,y（x可以等于y）按照一定顺序排列成的二元组称作一个<strong>有序对</strong>或者<strong>有序偶</strong>&lt;x,y&gt;</p>
+
+<p>有序对的性质：</p>
+
+<ul>
+  <li>当x≠y时，&lt;x,y&gt;≠&lt;y,x&gt;</li>
+  <li>&lt;x,y&gt;=&lt;u,v&gt;的充分必要条件是x=u且y=v</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td>笛卡尔积：A×B={&lt;x,y&gt;</td>
+      <td>x∈A∧y∈B}</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>笛卡尔积的性质：</p>
+
+<ul>
+  <li>任何集合和空集的笛卡尔积为空集</li>
+  <li>一般，笛卡尔积不满足交换律</li>
+  <li>笛卡尔积不满足结合律</li>
+  <li>笛卡尔积对并和交运算满足分配律</li>
+  <li>A⊆C∧B⊆D ⇒ A×B ⊆ C×D  (命题演算的方式证明)</li>
+</ul>
+
+<p>#######二元关系：</p>
+
+<p>一个集合满足如下条件之一：</p>
+
+<p>（1）集合非空，且它的元素都是有序对
+（2）集合是空集</p>
+
+<p>这个集合是一个二元关系，记为R，若&lt;x,y&gt;∈R,记为xRy。</p>
+
+<p>设A,B为集合，A×B的任何子集所定义的二元关系称作从A到B的二元关系，特别当A=B时称作A上的二元关系。
+如果|A|=n，那么|A×A|=n<sup>2</sup>，A×A的子集就有2<sup>n<sup>2</sup></sup>个。</p>
+
+<ul>
+  <li>空集是A×A的<strong>空关系</strong></li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>全域关系E<sub>A</sub> = {&lt;x,y&gt;</td>
+          <td>x∈A∧y∈A}</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>恒等关系I<sub>A</sub> = {&lt;x,x&gt;</td>
+          <td>x∈A}</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>小于等于关系L<sub>A</sub> = {&lt;x,y&gt;</td>
+          <td>x,y∈A,x≤y}，A是实数集R的子集</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>整除关系D<sub>A</sub> = {&lt;x,y&gt;</td>
+          <td>x,y∈A,x</td>
+          <td>y}，A是非零整数集<strong>Z<sup>*</sup></strong>的子集</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>包含关系R<sub>⊆</sub> = {&lt;x,y&gt;</td>
+          <td>x,y∈A,x⊆y}</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<p>关系的三种表示方法：1.集合表达式 2.关系矩阵 3.关系图</p>
+
+<p>#######关系的运算
+定义域：所有有序对的第一元素构成的集合：domR = {x|∃y(&lt;x,y&gt;∈R)}</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>值域：所有有序对的第二个元素构成的集合：ranR = {x</td>
+      <td>∃x(&lt;x,y&gt;∈R)}</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>域：fldR = domR∪ranR</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>逆关系： R<sup>-1</sup> = {&lt;x,y&gt;</td>
+      <td>&lt;y,x&gt;∈R}</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>右复合： F▫G = {&lt;x,y&gt;</td>
+      <td>∃t(&lt;x,t&gt;∈F∧&lt;t,y&gt;∈G)}</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <td>限制： R↑A = {&lt;x,y&gt;</td>
+      <td>xRy∧x∈A}</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>A在R下的像记为R[A] = ran(R↑A)</p>
+
+<p><strong>运算优先级</strong>：关系运算中逆运算优先于其他运算，所有的关系运算优先于集合运算。</p>
+
+<p>F为任意的关系：</p>
+
+<ul>
+  <li>(F<sup>-1</sup>)<sup>-1</sup> = F</li>
+  <li>domF<sup>-1</sup>=ranF, ranF<sup>-1</sup>=domF</li>
+</ul>
+
+<p>设F，G，H是任意的关系，则</p>
+
+<ul>
+  <li>(F▫G)▫H = F▫(G▫H)</li>
+  <li>(F▫G)<sup>-1</sup> = G<sup>-1</sup>▫F<sup>-1</sup></li>
+</ul>
+
+<p>设R为A上的关系： R▫I<sub>A</sub>=I<sub>A</sub>▫R=R</p>
+
+<p>设F，G，H为任意关系：</p>
+
+<ul>
+  <li>F▫(G∪H) = F▫G∪F▫H</li>
+  <li>(G∪H)▫F = G▫F∪H▫F</li>
+  <li>F▫(G∩H) ⊆ F▫G∩F▫H</li>
+  <li>(G∩H)▫F ⊆ G▫F∩H▫F</li>
+</ul>
+
+<p>设F为关系，A,B为集合，则：</p>
+
+<ul>
+  <li>F↑(A∪B) = F↑A∪F↑B</li>
+  <li>R[A∪B] = F[A]∪F[B]</li>
+  <li>F↑(A∩B) = F↑A∩F↑B</li>
+  <li>F[A∪B] ⊆ F[A]∩F[B]</li>
+</ul>
+
+<p>R的n次幂R<sup>n</sup>定义为：</p>
+
+<ul>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>R<sup>0</sup>={&lt;x,x&gt;</td>
+          <td>x∈A}=I<sub>A</sub></td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>R<sup>n+1</sup>=R<sup>n</sup>▫R</li>
+</ul>
+
+<p>设Ａ为n元集，R是A上的关系，则存在自然数s和t，使得R<sup>s</sup>=R<sup>t</sup></p>
+
+<p>设R为A上的关系,m,n∈N，则：</p>
+
+<ul>
+  <li>R<sup>m</sup>▫R<sup>n</sup> = R<sup>m+n</sup></li>
+  <li>(R<sup>m</sup>)<sup>n</sup>=R<sup>mn</sup></li>
+</ul>
+
+<p>设Ｒ为A上的关系，若存在自然数s,t(s&lt;t)使得R<sup>s</sup>=R<sup>t</sup>，则：</p>
+
+<ul>
+  <li>对任何k∈N有R<sup>s+k</sup>=R<sup>t+k</sup>；</li>
+  <li>对任何k,i∈N有R<sup>s+kp+i</sup>=R<sup>s+i</sup>，其中p=t-s</li>
+  <li>令S={R<sup>0</sup>,R<sup>1</sup>,…,R<sup>t-1</sup>}，则对于任意的q∈N有R<sup>q</sup>∈S。</li>
+</ul>
+
+<p>######关系的性质
+设R为A上的关系</p>
+
+<ul>
+  <li>若∀x(x∈A→&lt;x,x&gt;∈R)，则称R在A上是自反的。</li>
+  <li>若∀x(x∈A→&lt;x,x&gt;∉R)，则称R在A上是反自反的。</li>
+</ul>
+
+<p>设R为A上的关系</p>
+
+<ul>
+  <li>若∀x∀y(x,y∈A∧&lt;x,y&gt;∈R→&lt;y,x&gt;∈R)，则称R为A上对称的关系。</li>
+  <li>若∀x∀y(x,y∈A∧&lt;x,y&gt;∈R∧&lt;y,x&gt;∈R→x=y)，则称R为A上反对称的关系。</li>
+</ul>
+
+<p>设R为A上的关系</p>
+
+<p>若∀x∀y∀z(x,y,z∈A∧&lt;x,y&gt;∈R∧&lt;y,z&gt;∈R→&lt;x,z&gt;∈R)，则称R为A上传递的关系。</p>
+
+<p>设R为A上的关系，则</p>
+
+<ul>
+  <li>R在A上自反当且仅当I<sub>A</sub>⊆R.</li>
+  <li>R在A上反自反当且仅当R∩I<sub>A</sub>=∅.</li>
+  <li>R在A上对称当且仅当R=R<sup>-1</sup>.</li>
+  <li>R在A上反对称当且仅当R∩R<sup>-1</sup>⊆I<sub>A</sub></li>
+  <li>R在A上传递当且仅当R▫R⊆R.</li>
+</ul>
+
+<p>######关系的闭包
+设R是非空集合A上的关系，R的自反（传递或对称）闭包是A上的关系R’,使得R’满足以下条件.</p>
+
+<ul>
+  <li>R’是自反的（对称或传递的）</li>
+  <li>R⊆R’</li>
+  <li>对A上任何包含R的自反（对称或传递）关系R<sup>n</sup>有R’⊆R’’.</li>
+</ul>
+
+<p>自反闭包r(R)，对称闭包s(R)，传递闭包t(R)</p>
+
+<p>设R为A上的关系，则有</p>
+
+<ul>
+  <li>r(R) = R∪R<sup>0</sup></li>
+  <li>s(R) = R∪R<sup>-1</sup></li>
+  <li>t(R) = R∪R<sup>2</sup>∪R<sup>3</sup>∪….</li>
+</ul>
+
+<p>设R是非空集合A上的关系，则</p>
+
+<ul>
+  <li>R是自反的当且仅当r(R)=R.</li>
+  <li>R是对称的当且仅当s(R)=R.</li>
+  <li>R是传递的当且仅当t(R)=R.</li>
+</ul>
+
+<p>设R<sub>1</sub>和R<sub>2</sub>是非空集合A上的关系，且R<sub>1</sub>⊆R<sub>2</sub>，则</p>
+
+<ul>
+  <li>r(R<sub>1</sub>)⊆r(R<sub>2</sub>)</li>
+  <li>s(R<sub>1</sub>)⊆s(R<sub>2</sub>)</li>
+  <li>t(R<sub>1</sub>)⊆t(R<sub>2</sub>)</li>
+</ul>
+
+<p>设R是非空集合A上的关系</p>
+
+<ul>
+  <li>若R是自反的，s(R)和t(R)也是自反的</li>
+  <li>若R是对称的，r(R)与t(R)也是对称的</li>
+  <li>若R是传递的，则r(R)是传递的</li>
+</ul>
+
+<p>######等价关系</p>
+
+<p>设R为非空集合A上的关系。如果R是自反的、对称的和传递的，则称R为A上的等价关系。记为x~y</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>设R为非空集合A上的等价关系，∀x∈A，令[x]<sub>R</sub>={y</td>
+      <td>y∈A∧xRy}，称[x]<sub>R</sub>为x关于R的等价类，简称为x的等价类，记为[x]</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>设R为非空集合A上的等价关系，则</p>
+
+<ul>
+  <li>∀x∈A，[x]是A的非空子集</li>
+  <li>∀x,y∈A，如果xRy，则[x] = [y]</li>
+  <li>∀x,y∈A，如果x与y不满足关系R，[x]与[y]不交</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>∪{[x]</td>
+          <td>x∈A}=A</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<p>设R为非空集合A上的等价关系，以R的所有等价类作为元素的集合称为A关于R的商集，记作A/R，即
+A/R={[x]<sub>R</sub>|x∈A}</p>
+
+<p>设A为非空集合，若A的子集族Π（Π⊆P(A)，是A的子集构成的集合）满足下面的条件：</p>
+
+<p>（1）∅∉Π</p>
+
+<p>（2）∀x∀y(x,y∈Π∧x≠y→x∩y=∅)</p>
+
+<p>（3）∪Π=A</p>
+
+<p>则Π是A的一个划分，称Π中的元素为A的划分块。</p>
+
+<p>######偏序关系</p>
+
+<p>设R为非空集合A上的关系。如果R是自反的、反对称的和传递的。则称R为A上的偏序关系，记作≤。</p>
+
+<ul>
+  <li>∀x,y∈A,x＜y ⇔ x≤y∧x≠y</li>
+  <li>∀x,y∈A,x与y可比 ⇔ x≤y∨y≤x</li>
+</ul>
+
+<p>设R为非空集合A上的偏序关系，如果∀x,y∈A，x与y都是可比的，则称R为A上的全序关系</p>
+
+<p>集合A和A上的偏序关系≤一起称作偏序集，记作&lt;A,≤&gt;.</p>
+
+<p>设&lt;A,≤&gt;为偏序集，∀x,y∈A，如果x＜y且不存在z∈A 使得x＜z＜y，则称y覆盖x.</p>
+
+<p>哈斯图：P136</p>
+
+<p>设&lt;A,≤&gt;为偏序集，B⊆A，y∈B.</p>
+
+<ul>
+  <li>若∀x(x∈B→y≤x)成立，则称y为B的最小元。</li>
+  <li>若∀x(x∈B→x≤y)成立，则称y为B的最小元。</li>
+  <li>若∀x(x∈B∧x≤y→x=y)成立，则称y为B的极小元。</li>
+  <li>若∀x(x∈B∧y≤x→x=y)成立，则称y为B的极大元。</li>
+</ul>
+
+<p>设&lt;A,≤&gt;为偏序集，B⊆A，y∈A.</p>
+
+<ul>
+  <li>若∀x(x∈B→x≤y)成立，则称y为B的上界。</li>
+  <li>若∀x(x∈B→y≤x)成立，则称y为B的下界。</li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>令C={y</td>
+          <td>y为B的上界}，则称C的最小元为B的最小上界或上确界</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>令D={y</td>
+          <td>y为B的下界}，则称D的最大元为B的最大下界或下确界</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<p>作业：6，12，25，31，33，40，45，48</p>
+
+<p>###函数
+设F为二元关系，若∀x∈domF都存在唯一的y∈ranF使xFy成立，则称F为函数。对于函数F，如果有xFy，则记住y=F(x)，并称y为F在x的值。</p>
+
+<p>设F,G为函数，则 F=G ⇔ F⊆G ∧ G⊆F，如果两个函数相等，必然有：</p>
+
+<ul>
+  <li>domF=domG</li>
+  <li>∀x∈domF=domG,都有F(x)=G(x).</li>
+</ul>
+
+<p>设A，B为集合，如果f为函数，且domf=A,ranf⊆B，则f称作从A到B的函数，记作f:A → B</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>所有从A到B的函数的集合记作B<sup>A</sup> = {f</td>
+      <td>f:A → B}</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>设函数f:A→B,A<sub>1</sub>⊆A,B<sub>1</sub>⊆B.</p>
+
+<ul>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>令f(A<sub>1</sub>)={f(x)</td>
+          <td>x∈A<sub>1</sub>}，称f(A<sub>1</sub>)为A<sub>1</sub>在f下的像。特别的当A<sub>1</sub>=A时称f(A)为函数的像。</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>令f<sup>-1</sup>(B<sub>1</sub>)={x</td>
+          <td>x∈A∧f(x)∈B<sub>1</sub>},称f<sup>-1</sup>(B<sub>1</sub>)为B<sub>1</sub>下的完全原像。</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<p>设f:A-&gt;B,</p>
+
+<p>(1)若ranf=B，则称f:A-&gt;B是满射</p>
+
+<p>(2)若∀y∈ranf都存在唯一的x∈A使得f(x)=y，则称f:A-&gt;B是单射的。</p>
+
+<p>(3)若f:A-&gt;B既是满射又是单射的，则称f:A-&gt;B是双射的(或一一映像)。</p>
+
+<hr />
+
+<p>(1)设f:A-&gt;B，如果存在c∈B使得对所有的x∈A都有f(x)=c，则称f:A-&gt;B是常函数。</p>
+
+<p>(2)称A上的恒等关系I<sub>A</sub>为A上的恒等函数，对所有的x∈A都有I<sub>A</sub>(x)=x.</p>
+
+<p>(3)设&lt;A,≤&gt;,&lt;B,≤&gt;为偏序集，f:A-&gt;B，如果对于任意的x<sub>1</sub>，x<sub>2</sub>∈A，x<sub>1</sub>&lt;x<sub>2</sub>，就有f(x<sub>1</sub>)≤f(x<sub>2</sub>)，
+则称f为单调递增的；如果对任意的x<sub>1</sub>,x<sub>2</sub>∈A,x<sub>1</sub>&lt;x<sub>2</sub>，就有f(x<sub>1</sub>)&lt;f(x<sub>2</sub>)，则称f为严格单调递增的。</p>
+
+<p>(4)设A为集合，对于任意的A’⊆A，A’的特征函数Χ<sub>A’</sub>:A-&gt;{0,1}定义为：
+X<sub>A’</sub>(a)= 1 , a∈A’ <strong>;</strong> 0 , a∈A-A’</p>
+
+<p>(5)设R是A上的等价关系，令g:A-&gt;A/R g(a)=[a],∀a∈A
+称g是从A到商集A/R的自然映射。</p>
+
+<p>不同的等价关系将确定不同的自然映射，其中恒等关系所确定的自然映射是双射，而其他自然映射一般来说只是满射。</p>
+
+<p>######函数的复合和反函数
+设F，G是函数，则F▫G也是函数，且满足</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>(1)dom(F▫G)={x</td>
+      <td>x∈domF∧F(x)∈domG}</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>(2)∀x∈dom(F▫G)有F▫G(x)=G(F(x))</p>
+
+<p>设F，G，H为函数，则(F▫G)▫H和F▫(G▫H)都是函数，且(F▫G)▫H=F▫(G▫H)</p>
+
+<p>设f:A-&gt;B,g:B-&gt;C，则f▫g：A-&gt;C，且∀x∈A都有f▫g(x)=g(f(x)).</p>
+
+<p>设f：A-&gt;B，g：B-&gt;C.
+(1)如果f:A-&gt;B, g:B-&gt;C都是满射的，则f▫g:A-&gt;C也是满射。
+(2)如果f:A-&gt;B, g:B-&gt;C都是单射的，则f▫g:A-&gt;C也是单射。
+(3)如果f:A-&gt;B, g:B-&gt;C都是双射的，则f▫g:A-&gt;C也是双射。</p>
+
+<p>设f:A-&gt;B，则有f = f▫I<sub>B</sub> = I<sub>A</sub>▫f</p>
+
+<p>设f:A-&gt;B是双射，则f<sup>-1</sup>：B-&gt;A也是双射。</p>
+
+<p>设f:A-&gt;B是双射，则f<sup>-1</sup>▫f=I<sub>B</sub>，f▫f<sup>-1</sup>=I<sub>A</sub></p>
+
+<p>作业：2， 3(2)(4)(6)(8)，9， 15， 16， 20， 26</p>
+
+<p>##第三部分</p>
+
+<p>###第九章</p>
+
+<p>######二元运算及其性质
+设S为集合，函数f:S×S-&gt;S称为S上的二元运算。</p>
+
+<p>一个运算时集合S的二元运算需要满足的性质：</p>
+
+<ul>
+  <li>S中任何两个元素都可以进行这种运算，且运算的结果唯一的。</li>
+  <li>S中任何两个元素的运算结果都属于S，满足封闭性。</li>
+</ul>
+
+<p>设S为集合，函数f:S-&gt;S称为S上的一个一元运算。f(x)=y记作▫(x)=y或▫x=y</p>
+
+<p>设▫为S上的二元运算，如果对于任意的x,y,z∈S都有 x▫y = y▫x 则称运算▫在S上是可交换的，满足交换律</p>
+
+<p>设▫为S上的二元运算，如果对于任意的x,y,z∈S都有 x▫(y▫z)=(x▫y)▫z，则称运算▫在S上是可结合的，满足结合律</p>
+
+<p>设▫为S上的二元运算，如果对于任意的x∈S都有 x▫x=x，则称该运算▫满足幂等律。</p>
+
+<p>设▫和*是S上的两个二元运算，如果对任意的x,y,z∈S有</p>
+
+<ul>
+  <li>x<em>(y▫z) = (x</em>y)▫(x*z)</li>
+  <li>(y▫z)<em>x = (y</em>x)▫(z*x)</li>
+</ul>
+
+<p>则称运算*对▫是可分配的，或者 *对▫适合分配率。</p>
+
+<p>设*和▫是S上两个可交换的二元运算，如果对于任意的x,y都有</p>
+
+<ul>
+  <li>x*(x▫y) = x</li>
+  <li>x▫(x*y) = x</li>
+</ul>
+
+<p>则称▫和*满足吸收率</p>
+
+<p>设▫为S上的二元运算，如果存在e<sub>l</sub>(或者e<sub>r</sub>)，使得对任何x∈S都有
+e<sub>l</sub>▫x = x (或x▫e<sub>r</sub> = x)
+则称e<sub>l</sub>(或e<sub>r</sub>)是s中关于▫运算的一个左单位元（或右单位元）。若e关于▫运算既是左单位元又是有单位元，则e是S上关于运算▫的单位元（幺元）</p>
+
+<p>设▫为S上的二元运算，e<sub>l</sub>和e<sub>r</sub>分别为▫运算的左单位元和右单位元，则
+e<sub>l</sub> = e<sub>r</sub> = e，且e为S上关于▫运算的唯一的单位元。</p>
+
+<p>设▫为S上的二元运算，若存在元素θ<sub>l</sub>(或者θ<sub>r</sub>)∈S，使得对于任意的x∈S有
+θ<sub>l</sub> ▫ x = θ<sub>r</sub>  (或x ▫ θ<sub>r</sub> = θ<sub>r</sub>)
+则称θ<sub>l</sub>(θ<sub>r</sub>)是S上关于▫运算的左零元（或右零元）。若θ∈S关于▫运算既是左零元又是右零元，则称θ为S上关于▫运算的零元。</p>
+
+<p>设▫为S上的二元运算，θ<sub>l</sub>和θ<sub>r</sub>分别为▫运算的左零元和右零元，则有
+θ<sub>l</sub> = θ<sub>r</sub> = θ 
+且 θ是关于▫运算的唯一的零元。</p>
+
+<p>设▫为S上的二元运算，e和θ分别为▫运算的单位元和零元，如果S至少有两个元素，则e≠θ。</p>
+
+<p>设▫为S上的二元运算，e为▫的单位元，于是x∈S，如果存在y<sub>l</sub>∈S(或者y<sub>r</sub>∈S)，使得
+y<sub>l</sub>▫x = e (或x▫y<sub>r</sub> = e)
+则称y<sub>l</sub>(或y<sub>r</sub>)是x的左逆元（或右逆元），存在逆元称x是可逆的。</p>
+
+<p>设▫为S上可结合的二元运算，e为该运算的单位元，对于x∈S如果存在左逆元y<sub>l</sub>和右逆元y<sub>r</sub>，则有
+y<sub>l</sub>=y<sub>r</sub>=y
+且y是x的唯一的逆元。</p>
+
+<p>设▫为S上的二元运算，如果对于任意的x,y,z∈S，满足以下条件：</p>
+
+<ul>
+  <li>若x▫y = x▫z且x≠θ，则y = z；</li>
+  <li>若y▫x = z▫x且x≠θ，则y = z；</li>
+</ul>
+
+<p>那么称▫运算满足消去律，其中第一个是左消去律，<strong>被消去的x不能是运算的零元</strong></p>
+
+<p>######代数系统
+非空集合S和S上的k个一元或二元运算f<sub>1</sub>，f<sub>2</sub>，….，f<sub>k</sub>组成的系统是<strong>代数系统</strong>
+记作&lt;S，f<sub>1</sub>，f<sub>2</sub>，….，f<sub>k</sub>&gt;.</p>
+
+<p>类似单位元一类的元素称为系统的特异元素或者代数常数。</p>
+
+<p>同类型的代数系统：两个代数系统中运算个数相同，对应的运算的元数相同，且代数常数的个数也相同，则称这两个代数系统是同类型的代数系统。</p>
+
+<p>子代数系统：设V=&lt;S，f<sub>1</sub>，f<sub>2</sub>，….，f<sub>k</sub>&gt;是代数系统，B⊆S，
+如果B对f<sub>1</sub>，f<sub>2</sub>，….，f<sub>k</sub>都是封闭的，且B和S含有相同的代数常数，则称&lt;B，f<sub>1</sub>，f<sub>2</sub>，….，f<sub>k</sub>&gt;
+是V的子代数系统。</p>
+
+<p>最大和最小的子代数系统称为平凡的子代数，若B是S的真子集，则B构成的子代数称为V的真子代数。</p>
+
+<p>设V<sub>1</sub>&lt;A ，▫&gt; 和 V<sub>2</sub>&lt;B , <em>&gt;是同类型的代数系统，▫和</em>为二元运算，在集合A×B上定义二元运算·如下</p>
+
+<p>∀&lt;a<sub>1</sub> , b<sub>1</sub>&gt;，&lt;a<sub>2</sub> , b<sub>2</sub>&gt; ∈ A×B
+有</p>
+
+<p>&lt;a<sub>1</sub> , b<sub>1</sub>&gt; · &lt;a<sub>2</sub> , b<sub>2</sub>&gt; = &lt;a<sub>1</sub> ▫ a<sub>2</sub> , b<sub>1</sub> * b<sub>2</sub>&gt;</p>
+
+<p>称V=&lt;A×B, ·&gt;为V<sub>1</sub>，V<sub>2</sub>的积代数，记作V<sub>1</sub> × V<sub>2</sub>，V<sub>1</sub>，V<sub>2</sub>是V的因子代数。</p>
+
+<p>对于积代数而言：</p>
+
+<ul>
+  <li>▫和*可交换的，·也可交换</li>
+  <li>单位元不变</li>
+  <li>可逆的元素不变</li>
+</ul>
+
+<p>作业：2， 8， 11， 15， 16</p>
+
+<p>###第十章</p>
+
+<p>半群：二元运算，运算时可结合的</p>
+
+<p>幺半群（独异点）：含有单位元的半群</p>
+
+<p>群：独异点的元素均可逆</p>
+
+<p>Klein四元群：有单位元e。a,b,c,e四个元素。每个元素的逆元是本身，任意两个元素的运算等于第三个元素。</p>
+
+<p>群G是有穷集，G是有限群</p>
+
+<p>只含有单位元的群是平凡群</p>
+
+<p>群的二元运算可逆，G为交换群（阿贝尔群）</p>
+
+<p>设G是群，a属于G，n属于Z，则a的n次幂</p>
+
+<p>a<sup>n</sup> = e , n=0 ; a<sup>n-1</sup>a, n&gt;0 ; (a<sup>-1</sup>)<sup>m</sup>，n&lt;0,n=-m</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>设G是群，a属于G，使得等式a<sup>k</sup> = e成立的最小正整数k是a 的阶（周期）记作</td>
+      <td>a</td>
+      <td>= k，这时也称a为k阶元。不存在k的话，称a 为无限阶元</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>设G为群，则G中的幂运算满足：</p>
+
+<ul>
+  <li>任意的a属于G，(a<sup>-1</sup>)<sup>-1</sup> = a.</li>
+  <li>任意的a,b属于G，(ab)<sup>-1</sup> = b<sup>-1</sup>a<sup>-1</sup>.</li>
+  <li>任意的a属于G，a<sup>n</sup>a<sup>m</sup> = a<sup>n+m</sup>, n,m属于Z.</li>
+  <li>任意的a属于G，(a<sup>n</sup>)<sup>m</sup> = a<sup>nm</sup>，n,m属于Z.</li>
+  <li>若G为交换群，则(ab)<sup>n</sup> = a<sup>n</sup>b<sup>n</sup></li>
+</ul>
+
+<p>G为群，则G中满足消去律，即对任意的a,b,c属于G有，</p>
+
+<ul>
+  <li>若ab = ac， 则 b = c</li>
+  <li>若ba = ca， 则 b = c</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td>设G为群，a属于G，且</td>
+      <td>a</td>
+      <td>= r. 设k是整数，则</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>a<sup>k</sup> = e当且仅当 r</td>
+          <td>k (r整除k)</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+  <li>
+    <table>
+      <tbody>
+        <tr>
+          <td>a<sup>-1</sup></td>
+          <td>=</td>
+          <td>a</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<p>作业：3， 4， 9， 15</p>
+
+<p>##第五部分：图论</p>
+
+<p>######第14章</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">ArrowSides</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>ArrowSides</li>
+          <li><a href="mailto:yrk686924@outlook.com">yrk686924@outlook.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/ArrowSides"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">ArrowSides</span></a>
+
+          </li>
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>For what you want , never give up.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>

@@ -6,57 +6,987 @@
 </description>
     <link>https://arrowsides.github.io/</link>
     <atom:link href="https://arrowsides.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 01 Jul 2016 22:28:29 +0800</pubDate>
-    <lastBuildDate>Fri, 01 Jul 2016 22:28:29 +0800</lastBuildDate>
+    <pubDate>Mon, 04 Jul 2016 12:42:16 +0800</pubDate>
+    <lastBuildDate>Mon, 04 Jul 2016 12:42:16 +0800</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
-        <title>My First Blog</title>
-        <description>&lt;p&gt;Hello, This is my first Blog!&lt;/p&gt;
+        <title>Discrete Mathematics</title>
+        <description>&lt;p&gt;##第一部分:数理逻辑&lt;/p&gt;
+
+&lt;p&gt;###第一章&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;命题的基本概念：简单命题，复合命题&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;命题的联结词：否定，合取，析取（和”或“操作不同，或操作分为&lt;strong&gt;相容或&lt;/strong&gt;和&lt;strong&gt;排斥或&lt;/strong&gt;），蕴含和等价&lt;/p&gt;
+
+    &lt;p&gt;（排斥或：当它连接的两个命题，只有当其中一个为真，另一个为假时，结果才为真）&lt;/p&gt;
+
+    &lt;p&gt;（相容或：只要有一个为真，结果就为真）&lt;/p&gt;
+
+    &lt;p&gt;蕴含式的表述：如果…那么… 只有…就… 因为…所以… 如果…才… 除非q才p&lt;/p&gt;
+
+    &lt;p&gt;真值表：&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;p&lt;/th&gt;
+          &lt;th&gt;q&lt;/th&gt;
+          &lt;th&gt;¬p&lt;/th&gt;
+          &lt;th&gt;p∧q&lt;/th&gt;
+          &lt;th&gt;p∨q&lt;/th&gt;
+          &lt;th&gt;p→q&lt;/th&gt;
+          &lt;th&gt;p↔q&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;0&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;1&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;命题公式： 命题常项，命题变项，合式公式（命题公式），哑元
+ 通过元语言符号来修饰对象语言的符号&lt;/li&gt;
+  &lt;li&gt;命题变项的赋值（解释）&lt;/li&gt;
+  &lt;li&gt;命题公式的分类：
+    &lt;ul&gt;
+      &lt;li&gt;永真式（重言式）&lt;/li&gt;
+      &lt;li&gt;矛盾式（矛盾式）&lt;/li&gt;
+      &lt;li&gt;可满足式&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;习题：6 15.3 15.4 17 19 &lt;strong&gt;26&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;###第二章&lt;/p&gt;
+
+&lt;p&gt;1.等值式：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1.A，B两个命题公式，A，B构成的等价式是重言式，则A，B是等值的。
+	等值式模式：由重言式推出的等值式。（16个等值式）(p21)
+2.代入实例和等值演算
+3.置换规则：Φ(A)是含有公式A的命题公式，Φ(B)是用公式B置换Φ(A)中A所有出现的命题后得到的命题公式。若B等值于A，那么Φ(A)等值于Φ(B) 2.析取范式和合取范式：
+
+1.文字：是命题变项和其否定统称文字。
+2.简单析取式和简单合取式：简单体现在有限个文字构成
+3.析取范式（合取范式）：由有限个简单析取式的合取构成的命题公式（由有限个简单合取式的析取构成的命题公式）
+4.极大项和极小项
+5.主析取范式（主合取范式）：所有简单合取式（析取式）都是极小项（极大项）的析取范式（合取范式） 3.联结词的完备集：
+
+1.什么是联结词的完备集
+2.联结词的完备集有哪些：
+	S = {¬，∧，∨}
+	S = {¬，∧}
+	S = {¬，∨}
+	S = {¬，→}
+3.与非式和或非式（p↑q，p↓q）
+	p↑q  =  ¬(p∧q)
+	p↓q  =  ¬(p∨q)
+	{↑},{↓}也是联结词的完备集
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;作业：5 6 12 13 20 30&lt;/p&gt;
+
+&lt;p&gt;###第三章&lt;/p&gt;
+
+&lt;p&gt;1.推理：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1.推理是指从已知的条件出发推出结论的过程。
+	前提是已知的命题公式的集合
+	结论是从前提出发应用推理规则推出的命题公式。
+2.推理有效：当条件均为假时或者（当条件均为真时，能够推出结论也为真），那么从条件推出结论的推理是有效的。
+3.命题公式An推出B的推理正确当且仅当： A1∧A2∧A3∧...∧Ak → B 为重言式。
+	判断重言式的方法：1.真值表 2.等值演算法 3.主析取范式法
+推理定律：9条  (p50) **如果前提不正确，不论结论正确与否，都说推理正确** 2.自然推理系统：
+
+形式系统分为两类：一类是自然推理系统（由任意给定的条件出发，推出结论）和公理推理系统（由公理出发推出定理）
+推理规则：（P51）
+公式序列可以称为条件推出结论的证明（公式序列可以理解为推理过程）
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;构造证明的方法：
+1.直接证明法：
+2.附加前提证明法：（若结论是蕴含式，可以将结论的前件作为推理的前提）
+3.归谬法（反证法）：（将结论的否定式作为前提引入并推出矛盾式的证明方法）&lt;/p&gt;
+
+&lt;p&gt;作业：15 16 18&lt;/p&gt;
+
+&lt;p&gt;###第四章&lt;/p&gt;
+
+&lt;p&gt;引入量词这一概念，达到表达个体与总体之间的内在联系和数量关系，一阶逻辑所研究的内容就是谓词。&lt;/p&gt;
+
+&lt;p&gt;1.一阶逻辑&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;个体词：所研究对象中可以独立存在的具体的或抽象的客体
+表示具体或特定的客体的个体词是：个体常项
+表示抽象或泛指的的个体词：个体变项
+个体域（论域）：表示个体变项的取值范围
+
+谓词：刻画个体词性质及个体词之间相互关系的词
+谓词常项和谓词变项
+n元谓词（含有n个个体变项的谓词）
+
+表示个体常项或变项之间数量关系的词称为量词：1.全称量词 2.存在量词
+为了区别不同的事物，可以使用特性谓词来区分。 2.一阶逻辑公式和解释
+
+一阶语言：用于一阶逻辑的形式语言。
+非逻辑符号和逻辑符号：逻辑符号是（个体变项的符号，量词的符号，联结词的符号和括号与逗号）
+一些概念：项，原子公式，合式公式（谓词公式，公式）【原子公式本身也是一种合式公式】{有限次的使用联结词得到的公式}。
+
+**概念**
+在公式 ∀xA和∃xA中称x为知道变元A为量词的辖域，在∀x和∃x的辖域中，x的所有出现都称为约束出现，A中不是约束出现的其他变项是自由出现。
+
+若A中不含自由出现的个体变项，则称A为封闭的公式，简称闭式。
+
+对于公式中个体域及个体常项符号、函数符号、谓词符号的指定称为解释，指定自由出现的个体变项的值称为赋值。
+
+I下的赋值σ：对每一个个体变项的符号x指定D1中的一个值σ(x).
+设公式A，规定：在解释I和赋值σ下：
+1.取个体域D1，
+2.若A中含个体常项符号a将它替换成a&#39;,
+3.若Ａ中含有函数符号ｆ就将它替换成f&#39;，
+4.若A中含有谓词符号F就将他替换Va为F&#39;,
+5.若A中含有自由出现的个体变项符号x就将它替换成为σ(x)。
+这样所得到的公式记作A&#39;,称A&#39;为A在I下的解释，或A在I下被解释为A&#39;。
+
+代换实例：用谓词公式将所对应的命题变项中的值处处替换得到的公式是原公式的代换实例。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;作业：2 5 8 10 12&lt;/p&gt;
+
+&lt;p&gt;###第五章（不考）&lt;/p&gt;
+
+&lt;p&gt;1.一阶逻辑的等值式：
+等值式：若A↔B 是永真式，则称A与B等值。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;存在一些基本的等值式：
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;2.置换规则和换名规则。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;置换规则：设Φ(A)是含公式A的公式，Φ(B)是用公式B取代Φ(A)中的所有的A之后所得到的公式，那么，若A与B等价，则Φ(A)与Φ(B)等价。
+换名规则：将A中某个量词辖域中的一个约束变项的所有出现和响应的指导变元全部改成该量词辖域中未曾出现过的某个个体变项的符号。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;3.前束范式：&lt;/p&gt;
+
+&lt;p&gt;具有如下形式：
+Q&lt;sub&gt;1&lt;/sub&gt;x&lt;sub&gt;1&lt;/sub&gt;Q&lt;sub&gt;2&lt;/sub&gt;x&lt;sub&gt;2&lt;/sub&gt;…..Q&lt;sub&gt;k&lt;/sub&gt;x&lt;sub&gt;k&lt;/sub&gt; 
+的一阶逻辑公式。  Q&lt;sub&gt;i&lt;/sub&gt;为∀或者∃，B为不含量词的公式。&lt;/p&gt;
+
+&lt;p&gt;前束范式存在定理：一阶逻辑中的任何公式都存在等值的前束范式。&lt;/p&gt;
+
+&lt;p&gt;4.一阶逻辑的推理理论&lt;/p&gt;
+
+&lt;p&gt;在一阶逻辑中，从前提A&lt;sub&gt;1&lt;/sub&gt;,A&lt;sub&gt;2&lt;/sub&gt;,….,A&lt;sub&gt;k&lt;/sub&gt;出发推出结论B的推理的形式结构，采取如下的蕴含式形式&lt;/p&gt;
+
+&lt;p&gt;A&lt;sub&gt;1&lt;/sub&gt;∧A&lt;sub&gt;2&lt;/sub&gt;∧A&lt;sub&gt;3&lt;/sub&gt;∧…..∧A&lt;sub&gt;k&lt;/sub&gt;→B&lt;/p&gt;
+
+&lt;p&gt;若上式为永真式，则推理正确。&lt;/p&gt;
+
+&lt;p&gt;5.自然推理系统：&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;1.字母表。
+2.合式公式。
+3.推理规则：（1）前提引入规则 （2）结论引入规则 （3）置换规则 （4）假言推理规则 （5）附加规则 
+（6）化简规则 （7）拒取式 （8）假言三段论规则 （9）析取三段论规则 （10）构造性二难推理规则 
+（11）合取引入规则 （12）∀-规则 （13）∀+规则 （14）∃-规则 （15） ∃+规则
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;作业：8， 12.（4） （5）， 15， 20， 23&lt;/p&gt;
+
+&lt;p&gt;##第二部分：集合论&lt;/p&gt;
+
+&lt;p&gt;###第六章&lt;/p&gt;
+
+&lt;p&gt;######1.集合的基本概念：&lt;/p&gt;
+
+&lt;p&gt;集合：把一些事物汇集到一起组成一个整体，这些事物是这个集合的&lt;strong&gt;元素&lt;/strong&gt;或者&lt;strong&gt;成员&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;元素与集合的关系：属于和不属于∈和∉&lt;/p&gt;
+
+&lt;p&gt;集合和集合的关系：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;包含  B⊆A⇔∀x(x∈B→x∈A)&lt;/li&gt;
+  &lt;li&gt;相等  A=B   A⊆B且B⊆A&lt;/li&gt;
+  &lt;li&gt;真子集  B⊂A且B≠A，则B是A的真子集&lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;空集∅  ∅={x&lt;/td&gt;
+          &lt;td&gt;x≠x}  空集是一切子集的子集 空集是唯一的&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;含有n个元素的集合简称为n元集&lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;幂集：A为集合，A的所有子集构成的集合称为A的幂集: P(A)={x&lt;/td&gt;
+          &lt;td&gt;x⊆A}&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;全集：一个具体问题中，所有涉及的集合都是同一个集合的子集，这个集合为全集，记作E。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;######2.集合的运算：
+* 并集 A∪B={x|x∈A∨x∈B}
+* 交集 A∩B={x|x∈A∧x∈A} 若两个集合的交集是空集，则称这两个集合不交
+* 相对补集 A-B={x|x∈A∧x∉B} 
+* 对称差集 A⊕B=(A-B)∪(B-A)
+* 绝对补集 ~A=E-A={x|x∈E∧x∉A}
+* 广义并 ∪A={x|∃z(z∈A∧x∈z)} A的元素的元素构成的集合
+* 广义交 ∩A={x|∀z(z∈A→x∈z)} A的所有公共元素的公共元素构成的集合 空集不能广义交&lt;/p&gt;
+
+&lt;p&gt;#######3.包含排斥原理：
+设S为有穷集合，P&lt;sub&gt;1&lt;/sub&gt;,P&lt;sub&gt;2&lt;/sub&gt;,…,P&lt;sub&gt;n&lt;/sub&gt;是n个性质，S中的任何元素x或者具有性质P&lt;sub&gt;i&lt;/sub&gt;或者不具有性质P&lt;sub&gt;i&lt;/sub&gt;，两种情况必选其一。
+令A&lt;sub&gt;i&lt;/sub&gt;表示S中具有性质P&lt;sub&gt;i&lt;/sub&gt;的元素构成的子集，则S不具有性质P&lt;sub&gt;1&lt;/sub&gt;，P&lt;sub&gt;2&lt;/sub&gt;，…，P&lt;sub&gt;n&lt;/sub&gt;的元素个数为：
+|S|-∑|A&lt;sub&gt;i&lt;/sub&gt;|+∑|A&lt;sub&gt;i&lt;/sub&gt;∩A&lt;sub&gt;j&lt;/sub&gt;|-∑|A&lt;sub&gt;i&lt;/sub&gt;∩A&lt;sub&gt;j&lt;/sub&gt;∩A&lt;sub&gt;k&lt;/sub&gt;|+…+(-1)&lt;sup&gt;n&lt;/sup&gt;∑|A&lt;sub&gt;i&lt;/sub&gt;∩A&lt;sub&gt;j&lt;/sub&gt;∩A&lt;sub&gt;k&lt;/sub&gt;∩…∩A&lt;sub&gt;n&lt;/sub&gt;|&lt;/p&gt;
+
+&lt;p&gt;#######4.集合恒等式（P100）&lt;/p&gt;
+
+&lt;p&gt;作业：9， 12， 18（3） （4）， 21， 23， 35&lt;/p&gt;
+
+&lt;p&gt;###第七章&lt;/p&gt;
+
+&lt;h5 id=&quot;section&quot;&gt;#&lt;/h5&gt;
+
+&lt;p&gt;由两个元素x,y（x可以等于y）按照一定顺序排列成的二元组称作一个&lt;strong&gt;有序对&lt;/strong&gt;或者&lt;strong&gt;有序偶&lt;/strong&gt;&amp;lt;x,y&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;有序对的性质：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;当x≠y时，&amp;lt;x,y&amp;gt;≠&amp;lt;y,x&amp;gt;&lt;/li&gt;
+  &lt;li&gt;&amp;lt;x,y&amp;gt;=&amp;lt;u,v&amp;gt;的充分必要条件是x=u且y=v&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;笛卡尔积：A×B={&amp;lt;x,y&amp;gt;&lt;/td&gt;
+      &lt;td&gt;x∈A∧y∈B}&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;笛卡尔积的性质：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;任何集合和空集的笛卡尔积为空集&lt;/li&gt;
+  &lt;li&gt;一般，笛卡尔积不满足交换律&lt;/li&gt;
+  &lt;li&gt;笛卡尔积不满足结合律&lt;/li&gt;
+  &lt;li&gt;笛卡尔积对并和交运算满足分配律&lt;/li&gt;
+  &lt;li&gt;A⊆C∧B⊆D ⇒ A×B ⊆ C×D  (命题演算的方式证明)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;#######二元关系：&lt;/p&gt;
+
+&lt;p&gt;一个集合满足如下条件之一：&lt;/p&gt;
+
+&lt;p&gt;（1）集合非空，且它的元素都是有序对
+（2）集合是空集&lt;/p&gt;
+
+&lt;p&gt;这个集合是一个二元关系，记为R，若&amp;lt;x,y&amp;gt;∈R,记为xRy。&lt;/p&gt;
+
+&lt;p&gt;设A,B为集合，A×B的任何子集所定义的二元关系称作从A到B的二元关系，特别当A=B时称作A上的二元关系。
+如果|A|=n，那么|A×A|=n&lt;sup&gt;2&lt;/sup&gt;，A×A的子集就有2&lt;sup&gt;n&lt;sup&gt;2&lt;/sup&gt;&lt;/sup&gt;个。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;空集是A×A的&lt;strong&gt;空关系&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;全域关系E&lt;sub&gt;A&lt;/sub&gt; = {&amp;lt;x,y&amp;gt;&lt;/td&gt;
+          &lt;td&gt;x∈A∧y∈A}&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;恒等关系I&lt;sub&gt;A&lt;/sub&gt; = {&amp;lt;x,x&amp;gt;&lt;/td&gt;
+          &lt;td&gt;x∈A}&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;小于等于关系L&lt;sub&gt;A&lt;/sub&gt; = {&amp;lt;x,y&amp;gt;&lt;/td&gt;
+          &lt;td&gt;x,y∈A,x≤y}，A是实数集R的子集&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;整除关系D&lt;sub&gt;A&lt;/sub&gt; = {&amp;lt;x,y&amp;gt;&lt;/td&gt;
+          &lt;td&gt;x,y∈A,x&lt;/td&gt;
+          &lt;td&gt;y}，A是非零整数集&lt;strong&gt;Z&lt;sup&gt;*&lt;/sup&gt;&lt;/strong&gt;的子集&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;包含关系R&lt;sub&gt;⊆&lt;/sub&gt; = {&amp;lt;x,y&amp;gt;&lt;/td&gt;
+          &lt;td&gt;x,y∈A,x⊆y}&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;关系的三种表示方法：1.集合表达式 2.关系矩阵 3.关系图&lt;/p&gt;
+
+&lt;p&gt;#######关系的运算
+定义域：所有有序对的第一元素构成的集合：domR = {x|∃y(&amp;lt;x,y&amp;gt;∈R)}&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;值域：所有有序对的第二个元素构成的集合：ranR = {x&lt;/td&gt;
+      &lt;td&gt;∃x(&amp;lt;x,y&amp;gt;∈R)}&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;域：fldR = domR∪ranR&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;逆关系： R&lt;sup&gt;-1&lt;/sup&gt; = {&amp;lt;x,y&amp;gt;&lt;/td&gt;
+      &lt;td&gt;&amp;lt;y,x&amp;gt;∈R}&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;右复合： F▫G = {&amp;lt;x,y&amp;gt;&lt;/td&gt;
+      &lt;td&gt;∃t(&amp;lt;x,t&amp;gt;∈F∧&amp;lt;t,y&amp;gt;∈G)}&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;限制： R↑A = {&amp;lt;x,y&amp;gt;&lt;/td&gt;
+      &lt;td&gt;xRy∧x∈A}&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;A在R下的像记为R[A] = ran(R↑A)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;运算优先级&lt;/strong&gt;：关系运算中逆运算优先于其他运算，所有的关系运算优先于集合运算。&lt;/p&gt;
+
+&lt;p&gt;F为任意的关系：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;(F&lt;sup&gt;-1&lt;/sup&gt;)&lt;sup&gt;-1&lt;/sup&gt; = F&lt;/li&gt;
+  &lt;li&gt;domF&lt;sup&gt;-1&lt;/sup&gt;=ranF, ranF&lt;sup&gt;-1&lt;/sup&gt;=domF&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;设F，G，H是任意的关系，则&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;(F▫G)▫H = F▫(G▫H)&lt;/li&gt;
+  &lt;li&gt;(F▫G)&lt;sup&gt;-1&lt;/sup&gt; = G&lt;sup&gt;-1&lt;/sup&gt;▫F&lt;sup&gt;-1&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;设R为A上的关系： R▫I&lt;sub&gt;A&lt;/sub&gt;=I&lt;sub&gt;A&lt;/sub&gt;▫R=R&lt;/p&gt;
+
+&lt;p&gt;设F，G，H为任意关系：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;F▫(G∪H) = F▫G∪F▫H&lt;/li&gt;
+  &lt;li&gt;(G∪H)▫F = G▫F∪H▫F&lt;/li&gt;
+  &lt;li&gt;F▫(G∩H) ⊆ F▫G∩F▫H&lt;/li&gt;
+  &lt;li&gt;(G∩H)▫F ⊆ G▫F∩H▫F&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;设F为关系，A,B为集合，则：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;F↑(A∪B) = F↑A∪F↑B&lt;/li&gt;
+  &lt;li&gt;R[A∪B] = F[A]∪F[B]&lt;/li&gt;
+  &lt;li&gt;F↑(A∩B) = F↑A∩F↑B&lt;/li&gt;
+  &lt;li&gt;F[A∪B] ⊆ F[A]∩F[B]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;R的n次幂R&lt;sup&gt;n&lt;/sup&gt;定义为：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;R&lt;sup&gt;0&lt;/sup&gt;={&amp;lt;x,x&amp;gt;&lt;/td&gt;
+          &lt;td&gt;x∈A}=I&lt;sub&gt;A&lt;/sub&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;R&lt;sup&gt;n+1&lt;/sup&gt;=R&lt;sup&gt;n&lt;/sup&gt;▫R&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;设Ａ为n元集，R是A上的关系，则存在自然数s和t，使得R&lt;sup&gt;s&lt;/sup&gt;=R&lt;sup&gt;t&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;设R为A上的关系,m,n∈N，则：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;R&lt;sup&gt;m&lt;/sup&gt;▫R&lt;sup&gt;n&lt;/sup&gt; = R&lt;sup&gt;m+n&lt;/sup&gt;&lt;/li&gt;
+  &lt;li&gt;(R&lt;sup&gt;m&lt;/sup&gt;)&lt;sup&gt;n&lt;/sup&gt;=R&lt;sup&gt;mn&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;设Ｒ为A上的关系，若存在自然数s,t(s&amp;lt;t)使得R&lt;sup&gt;s&lt;/sup&gt;=R&lt;sup&gt;t&lt;/sup&gt;，则：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;对任何k∈N有R&lt;sup&gt;s+k&lt;/sup&gt;=R&lt;sup&gt;t+k&lt;/sup&gt;；&lt;/li&gt;
+  &lt;li&gt;对任何k,i∈N有R&lt;sup&gt;s+kp+i&lt;/sup&gt;=R&lt;sup&gt;s+i&lt;/sup&gt;，其中p=t-s&lt;/li&gt;
+  &lt;li&gt;令S={R&lt;sup&gt;0&lt;/sup&gt;,R&lt;sup&gt;1&lt;/sup&gt;,…,R&lt;sup&gt;t-1&lt;/sup&gt;}，则对于任意的q∈N有R&lt;sup&gt;q&lt;/sup&gt;∈S。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;######关系的性质
+设R为A上的关系&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;若∀x(x∈A→&amp;lt;x,x&amp;gt;∈R)，则称R在A上是自反的。&lt;/li&gt;
+  &lt;li&gt;若∀x(x∈A→&amp;lt;x,x&amp;gt;∉R)，则称R在A上是反自反的。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;设R为A上的关系&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;若∀x∀y(x,y∈A∧&amp;lt;x,y&amp;gt;∈R→&amp;lt;y,x&amp;gt;∈R)，则称R为A上对称的关系。&lt;/li&gt;
+  &lt;li&gt;若∀x∀y(x,y∈A∧&amp;lt;x,y&amp;gt;∈R∧&amp;lt;y,x&amp;gt;∈R→x=y)，则称R为A上反对称的关系。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;设R为A上的关系&lt;/p&gt;
+
+&lt;p&gt;若∀x∀y∀z(x,y,z∈A∧&amp;lt;x,y&amp;gt;∈R∧&amp;lt;y,z&amp;gt;∈R→&amp;lt;x,z&amp;gt;∈R)，则称R为A上传递的关系。&lt;/p&gt;
+
+&lt;p&gt;设R为A上的关系，则&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;R在A上自反当且仅当I&lt;sub&gt;A&lt;/sub&gt;⊆R.&lt;/li&gt;
+  &lt;li&gt;R在A上反自反当且仅当R∩I&lt;sub&gt;A&lt;/sub&gt;=∅.&lt;/li&gt;
+  &lt;li&gt;R在A上对称当且仅当R=R&lt;sup&gt;-1&lt;/sup&gt;.&lt;/li&gt;
+  &lt;li&gt;R在A上反对称当且仅当R∩R&lt;sup&gt;-1&lt;/sup&gt;⊆I&lt;sub&gt;A&lt;/sub&gt;&lt;/li&gt;
+  &lt;li&gt;R在A上传递当且仅当R▫R⊆R.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;######关系的闭包
+设R是非空集合A上的关系，R的自反（传递或对称）闭包是A上的关系R’,使得R’满足以下条件.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;R’是自反的（对称或传递的）&lt;/li&gt;
+  &lt;li&gt;R⊆R’&lt;/li&gt;
+  &lt;li&gt;对A上任何包含R的自反（对称或传递）关系R&lt;sup&gt;n&lt;/sup&gt;有R’⊆R’’.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;自反闭包r(R)，对称闭包s(R)，传递闭包t(R)&lt;/p&gt;
+
+&lt;p&gt;设R为A上的关系，则有&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;r(R) = R∪R&lt;sup&gt;0&lt;/sup&gt;&lt;/li&gt;
+  &lt;li&gt;s(R) = R∪R&lt;sup&gt;-1&lt;/sup&gt;&lt;/li&gt;
+  &lt;li&gt;t(R) = R∪R&lt;sup&gt;2&lt;/sup&gt;∪R&lt;sup&gt;3&lt;/sup&gt;∪….&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;设R是非空集合A上的关系，则&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;R是自反的当且仅当r(R)=R.&lt;/li&gt;
+  &lt;li&gt;R是对称的当且仅当s(R)=R.&lt;/li&gt;
+  &lt;li&gt;R是传递的当且仅当t(R)=R.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;设R&lt;sub&gt;1&lt;/sub&gt;和R&lt;sub&gt;2&lt;/sub&gt;是非空集合A上的关系，且R&lt;sub&gt;1&lt;/sub&gt;⊆R&lt;sub&gt;2&lt;/sub&gt;，则&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;r(R&lt;sub&gt;1&lt;/sub&gt;)⊆r(R&lt;sub&gt;2&lt;/sub&gt;)&lt;/li&gt;
+  &lt;li&gt;s(R&lt;sub&gt;1&lt;/sub&gt;)⊆s(R&lt;sub&gt;2&lt;/sub&gt;)&lt;/li&gt;
+  &lt;li&gt;t(R&lt;sub&gt;1&lt;/sub&gt;)⊆t(R&lt;sub&gt;2&lt;/sub&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;设R是非空集合A上的关系&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;若R是自反的，s(R)和t(R)也是自反的&lt;/li&gt;
+  &lt;li&gt;若R是对称的，r(R)与t(R)也是对称的&lt;/li&gt;
+  &lt;li&gt;若R是传递的，则r(R)是传递的&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;######等价关系&lt;/p&gt;
+
+&lt;p&gt;设R为非空集合A上的关系。如果R是自反的、对称的和传递的，则称R为A上的等价关系。记为x~y&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;设R为非空集合A上的等价关系，∀x∈A，令[x]&lt;sub&gt;R&lt;/sub&gt;={y&lt;/td&gt;
+      &lt;td&gt;y∈A∧xRy}，称[x]&lt;sub&gt;R&lt;/sub&gt;为x关于R的等价类，简称为x的等价类，记为[x]&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;设R为非空集合A上的等价关系，则&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;∀x∈A，[x]是A的非空子集&lt;/li&gt;
+  &lt;li&gt;∀x,y∈A，如果xRy，则[x] = [y]&lt;/li&gt;
+  &lt;li&gt;∀x,y∈A，如果x与y不满足关系R，[x]与[y]不交&lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;∪{[x]&lt;/td&gt;
+          &lt;td&gt;x∈A}=A&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;设R为非空集合A上的等价关系，以R的所有等价类作为元素的集合称为A关于R的商集，记作A/R，即
+A/R={[x]&lt;sub&gt;R&lt;/sub&gt;|x∈A}&lt;/p&gt;
+
+&lt;p&gt;设A为非空集合，若A的子集族Π（Π⊆P(A)，是A的子集构成的集合）满足下面的条件：&lt;/p&gt;
+
+&lt;p&gt;（1）∅∉Π&lt;/p&gt;
+
+&lt;p&gt;（2）∀x∀y(x,y∈Π∧x≠y→x∩y=∅)&lt;/p&gt;
+
+&lt;p&gt;（3）∪Π=A&lt;/p&gt;
+
+&lt;p&gt;则Π是A的一个划分，称Π中的元素为A的划分块。&lt;/p&gt;
+
+&lt;p&gt;######偏序关系&lt;/p&gt;
+
+&lt;p&gt;设R为非空集合A上的关系。如果R是自反的、反对称的和传递的。则称R为A上的偏序关系，记作≤。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;∀x,y∈A,x＜y ⇔ x≤y∧x≠y&lt;/li&gt;
+  &lt;li&gt;∀x,y∈A,x与y可比 ⇔ x≤y∨y≤x&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;设R为非空集合A上的偏序关系，如果∀x,y∈A，x与y都是可比的，则称R为A上的全序关系&lt;/p&gt;
+
+&lt;p&gt;集合A和A上的偏序关系≤一起称作偏序集，记作&amp;lt;A,≤&amp;gt;.&lt;/p&gt;
+
+&lt;p&gt;设&amp;lt;A,≤&amp;gt;为偏序集，∀x,y∈A，如果x＜y且不存在z∈A 使得x＜z＜y，则称y覆盖x.&lt;/p&gt;
+
+&lt;p&gt;哈斯图：P136&lt;/p&gt;
+
+&lt;p&gt;设&amp;lt;A,≤&amp;gt;为偏序集，B⊆A，y∈B.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;若∀x(x∈B→y≤x)成立，则称y为B的最小元。&lt;/li&gt;
+  &lt;li&gt;若∀x(x∈B→x≤y)成立，则称y为B的最小元。&lt;/li&gt;
+  &lt;li&gt;若∀x(x∈B∧x≤y→x=y)成立，则称y为B的极小元。&lt;/li&gt;
+  &lt;li&gt;若∀x(x∈B∧y≤x→x=y)成立，则称y为B的极大元。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;设&amp;lt;A,≤&amp;gt;为偏序集，B⊆A，y∈A.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;若∀x(x∈B→x≤y)成立，则称y为B的上界。&lt;/li&gt;
+  &lt;li&gt;若∀x(x∈B→y≤x)成立，则称y为B的下界。&lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;令C={y&lt;/td&gt;
+          &lt;td&gt;y为B的上界}，则称C的最小元为B的最小上界或上确界&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;令D={y&lt;/td&gt;
+          &lt;td&gt;y为B的下界}，则称D的最大元为B的最大下界或下确界&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;作业：6，12，25，31，33，40，45，48&lt;/p&gt;
+
+&lt;p&gt;###函数
+设F为二元关系，若∀x∈domF都存在唯一的y∈ranF使xFy成立，则称F为函数。对于函数F，如果有xFy，则记住y=F(x)，并称y为F在x的值。&lt;/p&gt;
+
+&lt;p&gt;设F,G为函数，则 F=G ⇔ F⊆G ∧ G⊆F，如果两个函数相等，必然有：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;domF=domG&lt;/li&gt;
+  &lt;li&gt;∀x∈domF=domG,都有F(x)=G(x).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;设A，B为集合，如果f为函数，且domf=A,ranf⊆B，则f称作从A到B的函数，记作f:A → B&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;所有从A到B的函数的集合记作B&lt;sup&gt;A&lt;/sup&gt; = {f&lt;/td&gt;
+      &lt;td&gt;f:A → B}&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;设函数f:A→B,A&lt;sub&gt;1&lt;/sub&gt;⊆A,B&lt;sub&gt;1&lt;/sub&gt;⊆B.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;令f(A&lt;sub&gt;1&lt;/sub&gt;)={f(x)&lt;/td&gt;
+          &lt;td&gt;x∈A&lt;sub&gt;1&lt;/sub&gt;}，称f(A&lt;sub&gt;1&lt;/sub&gt;)为A&lt;sub&gt;1&lt;/sub&gt;在f下的像。特别的当A&lt;sub&gt;1&lt;/sub&gt;=A时称f(A)为函数的像。&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;令f&lt;sup&gt;-1&lt;/sup&gt;(B&lt;sub&gt;1&lt;/sub&gt;)={x&lt;/td&gt;
+          &lt;td&gt;x∈A∧f(x)∈B&lt;sub&gt;1&lt;/sub&gt;},称f&lt;sup&gt;-1&lt;/sup&gt;(B&lt;sub&gt;1&lt;/sub&gt;)为B&lt;sub&gt;1&lt;/sub&gt;下的完全原像。&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;设f:A-&amp;gt;B,&lt;/p&gt;
+
+&lt;p&gt;(1)若ranf=B，则称f:A-&amp;gt;B是满射&lt;/p&gt;
+
+&lt;p&gt;(2)若∀y∈ranf都存在唯一的x∈A使得f(x)=y，则称f:A-&amp;gt;B是单射的。&lt;/p&gt;
+
+&lt;p&gt;(3)若f:A-&amp;gt;B既是满射又是单射的，则称f:A-&amp;gt;B是双射的(或一一映像)。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;(1)设f:A-&amp;gt;B，如果存在c∈B使得对所有的x∈A都有f(x)=c，则称f:A-&amp;gt;B是常函数。&lt;/p&gt;
+
+&lt;p&gt;(2)称A上的恒等关系I&lt;sub&gt;A&lt;/sub&gt;为A上的恒等函数，对所有的x∈A都有I&lt;sub&gt;A&lt;/sub&gt;(x)=x.&lt;/p&gt;
+
+&lt;p&gt;(3)设&amp;lt;A,≤&amp;gt;,&amp;lt;B,≤&amp;gt;为偏序集，f:A-&amp;gt;B，如果对于任意的x&lt;sub&gt;1&lt;/sub&gt;，x&lt;sub&gt;2&lt;/sub&gt;∈A，x&lt;sub&gt;1&lt;/sub&gt;&amp;lt;x&lt;sub&gt;2&lt;/sub&gt;，就有f(x&lt;sub&gt;1&lt;/sub&gt;)≤f(x&lt;sub&gt;2&lt;/sub&gt;)，
+则称f为单调递增的；如果对任意的x&lt;sub&gt;1&lt;/sub&gt;,x&lt;sub&gt;2&lt;/sub&gt;∈A,x&lt;sub&gt;1&lt;/sub&gt;&amp;lt;x&lt;sub&gt;2&lt;/sub&gt;，就有f(x&lt;sub&gt;1&lt;/sub&gt;)&amp;lt;f(x&lt;sub&gt;2&lt;/sub&gt;)，则称f为严格单调递增的。&lt;/p&gt;
+
+&lt;p&gt;(4)设A为集合，对于任意的A’⊆A，A’的特征函数Χ&lt;sub&gt;A’&lt;/sub&gt;:A-&amp;gt;{0,1}定义为：
+X&lt;sub&gt;A’&lt;/sub&gt;(a)= 1 , a∈A’ &lt;strong&gt;;&lt;/strong&gt; 0 , a∈A-A’&lt;/p&gt;
+
+&lt;p&gt;(5)设R是A上的等价关系，令g:A-&amp;gt;A/R g(a)=[a],∀a∈A
+称g是从A到商集A/R的自然映射。&lt;/p&gt;
+
+&lt;p&gt;不同的等价关系将确定不同的自然映射，其中恒等关系所确定的自然映射是双射，而其他自然映射一般来说只是满射。&lt;/p&gt;
+
+&lt;p&gt;######函数的复合和反函数
+设F，G是函数，则F▫G也是函数，且满足&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;(1)dom(F▫G)={x&lt;/td&gt;
+      &lt;td&gt;x∈domF∧F(x)∈domG}&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;(2)∀x∈dom(F▫G)有F▫G(x)=G(F(x))&lt;/p&gt;
+
+&lt;p&gt;设F，G，H为函数，则(F▫G)▫H和F▫(G▫H)都是函数，且(F▫G)▫H=F▫(G▫H)&lt;/p&gt;
+
+&lt;p&gt;设f:A-&amp;gt;B,g:B-&amp;gt;C，则f▫g：A-&amp;gt;C，且∀x∈A都有f▫g(x)=g(f(x)).&lt;/p&gt;
+
+&lt;p&gt;设f：A-&amp;gt;B，g：B-&amp;gt;C.
+(1)如果f:A-&amp;gt;B, g:B-&amp;gt;C都是满射的，则f▫g:A-&amp;gt;C也是满射。
+(2)如果f:A-&amp;gt;B, g:B-&amp;gt;C都是单射的，则f▫g:A-&amp;gt;C也是单射。
+(3)如果f:A-&amp;gt;B, g:B-&amp;gt;C都是双射的，则f▫g:A-&amp;gt;C也是双射。&lt;/p&gt;
+
+&lt;p&gt;设f:A-&amp;gt;B，则有f = f▫I&lt;sub&gt;B&lt;/sub&gt; = I&lt;sub&gt;A&lt;/sub&gt;▫f&lt;/p&gt;
+
+&lt;p&gt;设f:A-&amp;gt;B是双射，则f&lt;sup&gt;-1&lt;/sup&gt;：B-&amp;gt;A也是双射。&lt;/p&gt;
+
+&lt;p&gt;设f:A-&amp;gt;B是双射，则f&lt;sup&gt;-1&lt;/sup&gt;▫f=I&lt;sub&gt;B&lt;/sub&gt;，f▫f&lt;sup&gt;-1&lt;/sup&gt;=I&lt;sub&gt;A&lt;/sub&gt;&lt;/p&gt;
+
+&lt;p&gt;作业：2， 3(2)(4)(6)(8)，9， 15， 16， 20， 26&lt;/p&gt;
+
+&lt;p&gt;##第三部分&lt;/p&gt;
+
+&lt;p&gt;###第九章&lt;/p&gt;
+
+&lt;p&gt;######二元运算及其性质
+设S为集合，函数f:S×S-&amp;gt;S称为S上的二元运算。&lt;/p&gt;
+
+&lt;p&gt;一个运算时集合S的二元运算需要满足的性质：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;S中任何两个元素都可以进行这种运算，且运算的结果唯一的。&lt;/li&gt;
+  &lt;li&gt;S中任何两个元素的运算结果都属于S，满足封闭性。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;设S为集合，函数f:S-&amp;gt;S称为S上的一个一元运算。f(x)=y记作▫(x)=y或▫x=y&lt;/p&gt;
+
+&lt;p&gt;设▫为S上的二元运算，如果对于任意的x,y,z∈S都有 x▫y = y▫x 则称运算▫在S上是可交换的，满足交换律&lt;/p&gt;
+
+&lt;p&gt;设▫为S上的二元运算，如果对于任意的x,y,z∈S都有 x▫(y▫z)=(x▫y)▫z，则称运算▫在S上是可结合的，满足结合律&lt;/p&gt;
+
+&lt;p&gt;设▫为S上的二元运算，如果对于任意的x∈S都有 x▫x=x，则称该运算▫满足幂等律。&lt;/p&gt;
+
+&lt;p&gt;设▫和*是S上的两个二元运算，如果对任意的x,y,z∈S有&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;x&lt;em&gt;(y▫z) = (x&lt;/em&gt;y)▫(x*z)&lt;/li&gt;
+  &lt;li&gt;(y▫z)&lt;em&gt;x = (y&lt;/em&gt;x)▫(z*x)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;则称运算*对▫是可分配的，或者 *对▫适合分配率。&lt;/p&gt;
+
+&lt;p&gt;设*和▫是S上两个可交换的二元运算，如果对于任意的x,y都有&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;x*(x▫y) = x&lt;/li&gt;
+  &lt;li&gt;x▫(x*y) = x&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;则称▫和*满足吸收率&lt;/p&gt;
+
+&lt;p&gt;设▫为S上的二元运算，如果存在e&lt;sub&gt;l&lt;/sub&gt;(或者e&lt;sub&gt;r&lt;/sub&gt;)，使得对任何x∈S都有
+e&lt;sub&gt;l&lt;/sub&gt;▫x = x (或x▫e&lt;sub&gt;r&lt;/sub&gt; = x)
+则称e&lt;sub&gt;l&lt;/sub&gt;(或e&lt;sub&gt;r&lt;/sub&gt;)是s中关于▫运算的一个左单位元（或右单位元）。若e关于▫运算既是左单位元又是有单位元，则e是S上关于运算▫的单位元（幺元）&lt;/p&gt;
+
+&lt;p&gt;设▫为S上的二元运算，e&lt;sub&gt;l&lt;/sub&gt;和e&lt;sub&gt;r&lt;/sub&gt;分别为▫运算的左单位元和右单位元，则
+e&lt;sub&gt;l&lt;/sub&gt; = e&lt;sub&gt;r&lt;/sub&gt; = e，且e为S上关于▫运算的唯一的单位元。&lt;/p&gt;
+
+&lt;p&gt;设▫为S上的二元运算，若存在元素θ&lt;sub&gt;l&lt;/sub&gt;(或者θ&lt;sub&gt;r&lt;/sub&gt;)∈S，使得对于任意的x∈S有
+θ&lt;sub&gt;l&lt;/sub&gt; ▫ x = θ&lt;sub&gt;r&lt;/sub&gt;  (或x ▫ θ&lt;sub&gt;r&lt;/sub&gt; = θ&lt;sub&gt;r&lt;/sub&gt;)
+则称θ&lt;sub&gt;l&lt;/sub&gt;(θ&lt;sub&gt;r&lt;/sub&gt;)是S上关于▫运算的左零元（或右零元）。若θ∈S关于▫运算既是左零元又是右零元，则称θ为S上关于▫运算的零元。&lt;/p&gt;
+
+&lt;p&gt;设▫为S上的二元运算，θ&lt;sub&gt;l&lt;/sub&gt;和θ&lt;sub&gt;r&lt;/sub&gt;分别为▫运算的左零元和右零元，则有
+θ&lt;sub&gt;l&lt;/sub&gt; = θ&lt;sub&gt;r&lt;/sub&gt; = θ 
+且 θ是关于▫运算的唯一的零元。&lt;/p&gt;
+
+&lt;p&gt;设▫为S上的二元运算，e和θ分别为▫运算的单位元和零元，如果S至少有两个元素，则e≠θ。&lt;/p&gt;
+
+&lt;p&gt;设▫为S上的二元运算，e为▫的单位元，于是x∈S，如果存在y&lt;sub&gt;l&lt;/sub&gt;∈S(或者y&lt;sub&gt;r&lt;/sub&gt;∈S)，使得
+y&lt;sub&gt;l&lt;/sub&gt;▫x = e (或x▫y&lt;sub&gt;r&lt;/sub&gt; = e)
+则称y&lt;sub&gt;l&lt;/sub&gt;(或y&lt;sub&gt;r&lt;/sub&gt;)是x的左逆元（或右逆元），存在逆元称x是可逆的。&lt;/p&gt;
+
+&lt;p&gt;设▫为S上可结合的二元运算，e为该运算的单位元，对于x∈S如果存在左逆元y&lt;sub&gt;l&lt;/sub&gt;和右逆元y&lt;sub&gt;r&lt;/sub&gt;，则有
+y&lt;sub&gt;l&lt;/sub&gt;=y&lt;sub&gt;r&lt;/sub&gt;=y
+且y是x的唯一的逆元。&lt;/p&gt;
+
+&lt;p&gt;设▫为S上的二元运算，如果对于任意的x,y,z∈S，满足以下条件：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;若x▫y = x▫z且x≠θ，则y = z；&lt;/li&gt;
+  &lt;li&gt;若y▫x = z▫x且x≠θ，则y = z；&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;那么称▫运算满足消去律，其中第一个是左消去律，&lt;strong&gt;被消去的x不能是运算的零元&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;######代数系统
+非空集合S和S上的k个一元或二元运算f&lt;sub&gt;1&lt;/sub&gt;，f&lt;sub&gt;2&lt;/sub&gt;，….，f&lt;sub&gt;k&lt;/sub&gt;组成的系统是&lt;strong&gt;代数系统&lt;/strong&gt;
+记作&amp;lt;S，f&lt;sub&gt;1&lt;/sub&gt;，f&lt;sub&gt;2&lt;/sub&gt;，….，f&lt;sub&gt;k&lt;/sub&gt;&amp;gt;.&lt;/p&gt;
+
+&lt;p&gt;类似单位元一类的元素称为系统的特异元素或者代数常数。&lt;/p&gt;
+
+&lt;p&gt;同类型的代数系统：两个代数系统中运算个数相同，对应的运算的元数相同，且代数常数的个数也相同，则称这两个代数系统是同类型的代数系统。&lt;/p&gt;
+
+&lt;p&gt;子代数系统：设V=&amp;lt;S，f&lt;sub&gt;1&lt;/sub&gt;，f&lt;sub&gt;2&lt;/sub&gt;，….，f&lt;sub&gt;k&lt;/sub&gt;&amp;gt;是代数系统，B⊆S，
+如果B对f&lt;sub&gt;1&lt;/sub&gt;，f&lt;sub&gt;2&lt;/sub&gt;，….，f&lt;sub&gt;k&lt;/sub&gt;都是封闭的，且B和S含有相同的代数常数，则称&amp;lt;B，f&lt;sub&gt;1&lt;/sub&gt;，f&lt;sub&gt;2&lt;/sub&gt;，….，f&lt;sub&gt;k&lt;/sub&gt;&amp;gt;
+是V的子代数系统。&lt;/p&gt;
+
+&lt;p&gt;最大和最小的子代数系统称为平凡的子代数，若B是S的真子集，则B构成的子代数称为V的真子代数。&lt;/p&gt;
+
+&lt;p&gt;设V&lt;sub&gt;1&lt;/sub&gt;&amp;lt;A ，▫&amp;gt; 和 V&lt;sub&gt;2&lt;/sub&gt;&amp;lt;B , &lt;em&gt;&amp;gt;是同类型的代数系统，▫和&lt;/em&gt;为二元运算，在集合A×B上定义二元运算·如下&lt;/p&gt;
+
+&lt;p&gt;∀&amp;lt;a&lt;sub&gt;1&lt;/sub&gt; , b&lt;sub&gt;1&lt;/sub&gt;&amp;gt;，&amp;lt;a&lt;sub&gt;2&lt;/sub&gt; , b&lt;sub&gt;2&lt;/sub&gt;&amp;gt; ∈ A×B
+有&lt;/p&gt;
+
+&lt;p&gt;&amp;lt;a&lt;sub&gt;1&lt;/sub&gt; , b&lt;sub&gt;1&lt;/sub&gt;&amp;gt; · &amp;lt;a&lt;sub&gt;2&lt;/sub&gt; , b&lt;sub&gt;2&lt;/sub&gt;&amp;gt; = &amp;lt;a&lt;sub&gt;1&lt;/sub&gt; ▫ a&lt;sub&gt;2&lt;/sub&gt; , b&lt;sub&gt;1&lt;/sub&gt; * b&lt;sub&gt;2&lt;/sub&gt;&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;称V=&amp;lt;A×B, ·&amp;gt;为V&lt;sub&gt;1&lt;/sub&gt;，V&lt;sub&gt;2&lt;/sub&gt;的积代数，记作V&lt;sub&gt;1&lt;/sub&gt; × V&lt;sub&gt;2&lt;/sub&gt;，V&lt;sub&gt;1&lt;/sub&gt;，V&lt;sub&gt;2&lt;/sub&gt;是V的因子代数。&lt;/p&gt;
+
+&lt;p&gt;对于积代数而言：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;▫和*可交换的，·也可交换&lt;/li&gt;
+  &lt;li&gt;单位元不变&lt;/li&gt;
+  &lt;li&gt;可逆的元素不变&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;作业：2， 8， 11， 15， 16&lt;/p&gt;
+
+&lt;p&gt;###第十章&lt;/p&gt;
+
+&lt;p&gt;半群：二元运算，运算时可结合的&lt;/p&gt;
+
+&lt;p&gt;幺半群（独异点）：含有单位元的半群&lt;/p&gt;
+
+&lt;p&gt;群：独异点的元素均可逆&lt;/p&gt;
+
+&lt;p&gt;Klein四元群：有单位元e。a,b,c,e四个元素。每个元素的逆元是本身，任意两个元素的运算等于第三个元素。&lt;/p&gt;
+
+&lt;p&gt;群G是有穷集，G是有限群&lt;/p&gt;
+
+&lt;p&gt;只含有单位元的群是平凡群&lt;/p&gt;
+
+&lt;p&gt;群的二元运算可逆，G为交换群（阿贝尔群）&lt;/p&gt;
+
+&lt;p&gt;设G是群，a属于G，n属于Z，则a的n次幂&lt;/p&gt;
+
+&lt;p&gt;a&lt;sup&gt;n&lt;/sup&gt; = e , n=0 ; a&lt;sup&gt;n-1&lt;/sup&gt;a, n&amp;gt;0 ; (a&lt;sup&gt;-1&lt;/sup&gt;)&lt;sup&gt;m&lt;/sup&gt;，n&amp;lt;0,n=-m&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;设G是群，a属于G，使得等式a&lt;sup&gt;k&lt;/sup&gt; = e成立的最小正整数k是a 的阶（周期）记作&lt;/td&gt;
+      &lt;td&gt;a&lt;/td&gt;
+      &lt;td&gt;= k，这时也称a为k阶元。不存在k的话，称a 为无限阶元&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;设G为群，则G中的幂运算满足：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;任意的a属于G，(a&lt;sup&gt;-1&lt;/sup&gt;)&lt;sup&gt;-1&lt;/sup&gt; = a.&lt;/li&gt;
+  &lt;li&gt;任意的a,b属于G，(ab)&lt;sup&gt;-1&lt;/sup&gt; = b&lt;sup&gt;-1&lt;/sup&gt;a&lt;sup&gt;-1&lt;/sup&gt;.&lt;/li&gt;
+  &lt;li&gt;任意的a属于G，a&lt;sup&gt;n&lt;/sup&gt;a&lt;sup&gt;m&lt;/sup&gt; = a&lt;sup&gt;n+m&lt;/sup&gt;, n,m属于Z.&lt;/li&gt;
+  &lt;li&gt;任意的a属于G，(a&lt;sup&gt;n&lt;/sup&gt;)&lt;sup&gt;m&lt;/sup&gt; = a&lt;sup&gt;nm&lt;/sup&gt;，n,m属于Z.&lt;/li&gt;
+  &lt;li&gt;若G为交换群，则(ab)&lt;sup&gt;n&lt;/sup&gt; = a&lt;sup&gt;n&lt;/sup&gt;b&lt;sup&gt;n&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;G为群，则G中满足消去律，即对任意的a,b,c属于G有，&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;若ab = ac， 则 b = c&lt;/li&gt;
+  &lt;li&gt;若ba = ca， 则 b = c&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;设G为群，a属于G，且&lt;/td&gt;
+      &lt;td&gt;a&lt;/td&gt;
+      &lt;td&gt;= r. 设k是整数，则&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;a&lt;sup&gt;k&lt;/sup&gt; = e当且仅当 r&lt;/td&gt;
+          &lt;td&gt;k (r整除k)&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;a&lt;sup&gt;-1&lt;/sup&gt;&lt;/td&gt;
+          &lt;td&gt;=&lt;/td&gt;
+          &lt;td&gt;a&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;作业：3， 4， 9， 15&lt;/p&gt;
+
+&lt;p&gt;##第五部分：图论&lt;/p&gt;
+
+&lt;p&gt;######第14章&lt;/p&gt;
 </description>
-        <pubDate>Fri, 01 Jul 2016 10:38:06 +0800</pubDate>
-        <link>https://arrowsides.github.io/blogs/test/2016/07/01/New-Blog.html</link>
-        <guid isPermaLink="true">https://arrowsides.github.io/blogs/test/2016/07/01/New-Blog.html</guid>
-        
-        <category>markdown</category>
+        <pubDate>Mon, 04 Jul 2016 12:39:06 +0800</pubDate>
+        <link>https://arrowsides.github.io/outline/2016/07/04/discrete-mathematics.html</link>
+        <guid isPermaLink="true">https://arrowsides.github.io/outline/2016/07/04/discrete-mathematics.html</guid>
         
         
-        <category>Blogs</category>
-        
-        <category>Test</category>
+        <category>Outline</category>
         
       </item>
     
       <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
-
-&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Tom&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &#39;Hi, Tom&#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-        <pubDate>Fri, 01 Jul 2016 10:14:06 +0800</pubDate>
-        <link>https://arrowsides.github.io/jekyll/update/2016/07/01/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">https://arrowsides.github.io/jekyll/update/2016/07/01/welcome-to-jekyll.html</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
-        
-      </item>
-    
-      <item>
-        <title>Theory Of Information</title>
+        <title>Theory of Information</title>
         <description>&lt;h1 id=&quot;section&quot;&gt;信息论的复习大纲&lt;/h1&gt;
 
 &lt;h2 id=&quot;section-1&quot;&gt;概念：&lt;/h2&gt;
@@ -179,10 +1109,57 @@ P&lt;sub&gt;e&lt;/sub&gt; &amp;lt; ε，就称R是可达的。&lt;/p&gt;
 
 &lt;p&gt;最大似然译码准则：（先验概率等概的情况下，与最大后验一致），取似然函数（先验概率）最大的情况来进行译码。&lt;/p&gt;
 </description>
-        <pubDate>Fri, 01 Jul 2016 00:00:00 +0800</pubDate>
-        <link>https://arrowsides.github.io/2016/07/01/Theory-of-Information.html</link>
-        <guid isPermaLink="true">https://arrowsides.github.io/2016/07/01/Theory-of-Information.html</guid>
+        <pubDate>Mon, 04 Jul 2016 12:33:06 +0800</pubDate>
+        <link>https://arrowsides.github.io/outline/2016/07/04/Theory-of-Information.html</link>
+        <guid isPermaLink="true">https://arrowsides.github.io/outline/2016/07/04/Theory-of-Information.html</guid>
         
+        
+        <category>Outline</category>
+        
+      </item>
+    
+      <item>
+        <title>My First Blog</title>
+        <description>&lt;p&gt;Hello, This is my first Blog!&lt;/p&gt;
+</description>
+        <pubDate>Fri, 01 Jul 2016 10:38:06 +0800</pubDate>
+        <link>https://arrowsides.github.io/blogs/test/2016/07/01/New-Blog.html</link>
+        <guid isPermaLink="true">https://arrowsides.github.io/blogs/test/2016/07/01/New-Blog.html</guid>
+        
+        <category>markdown</category>
+        
+        
+        <category>Blogs</category>
+        
+        <category>Test</category>
+        
+      </item>
+    
+      <item>
+        <title>Welcome to Jekyll!</title>
+        <description>&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&#39;Tom&#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &#39;Hi, Tom&#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 01 Jul 2016 10:14:06 +0800</pubDate>
+        <link>https://arrowsides.github.io/jekyll/update/2016/07/01/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">https://arrowsides.github.io/jekyll/update/2016/07/01/welcome-to-jekyll.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
         
       </item>
     

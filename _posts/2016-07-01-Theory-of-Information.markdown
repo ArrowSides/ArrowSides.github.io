@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "Theory of Information"
+date:   2016-07-04 12:33:06 +0800
+categories: Outline
+---
 信息论的复习大纲
 =
 
