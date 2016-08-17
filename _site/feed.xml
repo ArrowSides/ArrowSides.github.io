@@ -6,14 +6,71 @@
 </description>
     <link>https://arrowsides.github.io/</link>
     <atom:link href="https://arrowsides.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 18 Aug 2016 00:23:56 +0800</pubDate>
-    <lastBuildDate>Thu, 18 Aug 2016 00:23:56 +0800</lastBuildDate>
+    <pubDate>Thu, 18 Aug 2016 00:56:36 +0800</pubDate>
+    <lastBuildDate>Thu, 18 Aug 2016 00:56:36 +0800</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
       <item>
+        <title>Html5 Final Project</title>
+        <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+	&lt;meta charset=&quot;utf-8&quot;&gt;
+	&lt;title&gt;Final_Project&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style=&quot;margin: 25px&quot;&gt;
+	&lt;header&gt;
+		&lt;h1 style=&quot;color: blue&quot;&gt;Ruikang Yang&lt;/h1&gt;
+		&lt;nav style=&quot;background-color: lightgreen&quot;&gt;
+			&lt;a href=&quot;#One&quot;&gt;One&lt;/a&gt;
+			&lt;a href=&quot;#Two&quot;&gt;Two&lt;/a&gt;
+			&lt;a href=&quot;#Three&quot;&gt;Three&lt;/a&gt;
+			&lt;a href=&quot;http://www.google.com&quot;&gt;Google&lt;/a&gt;
+		&lt;/nav&gt;
+	&lt;/header&gt;
+	&lt;section id=&quot;One&quot; style=&quot;background-color: lightgrey&quot;&gt;
+		&lt;h2&gt;Favorite Foods&lt;/h2&gt;
+		&lt;ul&gt;
+			&lt;li&gt;Apple&lt;/li&gt;
+			&lt;li&gt;Banana&lt;/li&gt;
+			&lt;li&gt;Pear&lt;/li&gt;
+			&lt;li&gt;Watermelon&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/section&gt;
+	&lt;section id=&quot;Two&quot; style=&quot;background-color: lightgrey&quot;&gt;
+		&lt;h2&gt;Achievements&lt;/h2&gt;
+		&lt;p&gt;Progress in this course(100%)&lt;progress value=&quot;100&quot; max=&quot;100&quot;&gt;&lt;/progress&gt;&lt;br&gt;
+		Progress in the Specialization capstone(20%)&lt;progress value=&quot;20&quot; max=&quot;100&quot;&gt;&lt;/progress&gt;&lt;br&gt;
+		Progress in life goals(33%)&lt;progress value=&quot;33&quot; max=&quot;100&quot;&gt;&lt;/progress&gt;&lt;/p&gt;
+	&lt;/section&gt;
+	&lt;section id=&quot;Three&quot;&gt;
+		&lt;h2&gt;More About Me&lt;/h2&gt;
+		&lt;details open=&quot;open&quot;&gt;
+		&lt;summary&gt;My Childhood&lt;/summary&gt;
+		&lt;p&gt;I grew up in Xi&#39;an. I have lived there for 21 years and I love this city so much.&lt;/p&gt;
+		&lt;/details&gt;
+		&lt;footer&gt;
+		&lt;p&gt;
+		&lt;img src=&quot;http://www.intro-webdesign.com/images/newlogo.png&quot; alt=&quot;new logo&quot; &gt;
+		This page was created by Ruikang Yang &amp;amp; Collen van Lent. To learn more about web design, visit 
+		&lt;a href=&quot;http://www.intro-webdesign.com/&quot;&gt;Intro to Web Design&lt;/a&gt;.
+		&lt;/p&gt;
+		&lt;/footer&gt;
+	&lt;/section&gt;
+&lt;/body&gt;
+&lt;/html&gt;</description>
+        <pubDate>Thu, 18 Aug 2016 00:54:00 +0800</pubDate>
+        <link>https://arrowsides.github.io/blogs/2016/08/18/Final-Project.html</link>
+        <guid isPermaLink="true">https://arrowsides.github.io/blogs/2016/08/18/Final-Project.html</guid>
+        
+        
+        <category>blogs</category>
+        
+      </item>
+    
+      <item>
         <title>Html5 Study</title>
-        <description>&lt;p&gt;After three weeks of study, I have known the basic knowledge of Html5. I have finished the course and I passed the final exam. Although I still don’t have enough knowledgement about it. But if I insist on pacticing the program and stay hungry, I can be well in this aspect.
-&lt;a href=&quot;Final_Project.html&quot;&gt;My_Final_Project&lt;/a&gt;&lt;/p&gt;
+        <description>&lt;p&gt;After three weeks of study, I have known the basic knowledge of Html5. I have finished the course and I passed the final exam. Although I still don’t have enough knowledgement about it. But if I insist on pacticing the program and stay hungry, I can be well in this aspect.&lt;/p&gt;
 
 </description>
         <pubDate>Thu, 18 Aug 2016 00:11:00 +0800</pubDate>
